@@ -5,6 +5,7 @@ import 'package:cashmanager/widget/transaction.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:get/get.dart';
+import 'package:lottie/lottie.dart';
 
 class Home extends StatelessWidget {
   Home({Key? key}) : super(key: key);
@@ -35,9 +36,10 @@ Widget switchScreen(value){
           key: _bottomNavigationKey,
           index: controller.index.value,
           height: 60.0,
-          items: const<Widget>[
-            Icon(Icons.phone, size: 30,color: Colors.white,),
-            Icon(Icons.private_connectivity,size: 30,color: Colors.white),
+          items: const <Widget>[
+            Icon(Icons.phone_android_outlined,size: 30,color: Colors.white),
+          
+            Icon(Icons.compare_arrows,size: 30,color: Colors.white),
             Icon(Icons.history, size: 30,color: Colors.white),
            
           ],
