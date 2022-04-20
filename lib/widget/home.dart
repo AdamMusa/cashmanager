@@ -5,7 +5,6 @@ import 'package:cashmanager/widget/transaction.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:get/get.dart';
-import 'package:lottie/lottie.dart';
 
 class Home extends StatelessWidget {
   Home({Key? key}) : super(key: key);
@@ -28,6 +27,7 @@ Widget switchScreen(value){
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text("CashManager"),
         backgroundColor: Colors.indigo,

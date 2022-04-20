@@ -2,24 +2,63 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 class Index extends StatelessWidget {
-  const Index({ Key? key }) : super(key: key);
+  const Index({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-  return GridView.count(
+    return GridView.count(
       primary: false,
       padding: const EdgeInsets.all(20),
       crossAxisSpacing: 10,
       mainAxisSpacing: 10,
       crossAxisCount: 2,
       children: <Widget>[
-      Lottie.asset("assets/success.json"),
-      Lottie.asset("assets/tigo.json"),
-      Lottie.asset("assets/internet.json"),
-      Lottie.asset("assets/call.json"),
-      Lottie.asset("assets/call_airtel.json"),
-      Lottie.asset("assets/msg.json"),
-      Lottie.asset("assets/money.json"),
+        
+        Column(
+          mainAxisSize: MainAxisSize.min,
+
+          children: [
+            Lottie.asset("assets/moov_internet.json",height: 150),
+            const SizedBox(height: 10,),
+            const Text("Activez les Appels")
+          ],
+        ),
+       
+        Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Lottie.asset("assets/moov_msg.json",height: 150),
+            const SizedBox(height: 10,),
+            const Text("Activez les SMS")
+          ],
+        ),
+        Column(
+          mainAxisSize: MainAxisSize.min,
+
+          children: [
+            Lottie.asset("assets/moov.json",height: 150),
+            const SizedBox(height: 10,),
+            const Text("Rechargez les Megas")
+
+          ],
+        ),
+        Column(
+          mainAxisSize: MainAxisSize.min,
+
+          children: [
+            Lottie.asset("assets/moov_money.json",height: 150),
+            const SizedBox(height: 10,),
+            const Text("Envoyez l'argent")
+          ],
+        ),
+        Column(
+          children: [
+            Lottie.asset("assets/moov_success.json",height: 150),
+            const SizedBox(height: 10,),
+            const Text("Activez les Appels")
+
+          ],
+        ),
       ],
     );
   }
