@@ -11,16 +11,14 @@ class Home extends StatelessWidget {
 
  
 
-switchScreen(value){
+Widget switchScreen(value){
   switch (value) {
     case 0:
-      const Index();
-      break;
+      return const Index();
     case 1:
-      const Transaction();
-      break;
+      return const Transaction();
     default:
-    const Historic();
+    return const Historic();
   }
 }
 
@@ -31,20 +29,21 @@ switchScreen(value){
     return Scaffold(
       appBar: AppBar(
         title: const Text("CashManager"),
+        backgroundColor: Colors.indigo,
       ),
         bottomNavigationBar: CurvedNavigationBar(
           key: _bottomNavigationKey,
-          index: 0,
+          index: controller.index.value,
           height: 60.0,
           items: const<Widget>[
-            Icon(Icons.phone, size: 30),
-            Icon(Icons.private_connectivity,size: 30),
-            Icon(Icons.history, size: 30),
+            Icon(Icons.phone, size: 30,color: Colors.white,),
+            Icon(Icons.private_connectivity,size: 30,color: Colors.white),
+            Icon(Icons.history, size: 30,color: Colors.white),
            
           ],
-          color: Colors.white,
-          buttonBackgroundColor: Colors.white,
-          backgroundColor: Colors.blueAccent,
+          color: Colors.indigo,
+          buttonBackgroundColor: Colors.indigo,
+          backgroundColor: Colors.white,
           animationCurve: Curves.easeInOut,
           animationDuration: const Duration(milliseconds: 600),
           onTap: (index)=>controller.switcher(index),
