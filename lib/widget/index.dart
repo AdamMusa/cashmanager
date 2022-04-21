@@ -35,7 +35,7 @@ Widget customItem({VoidCallback? onTap,String? lottiePath,String? text }){
       children: <Widget>[
         customItem(
           onTap: ()=>Get.to(
-            const Appels(),
+            Appels(),
             transition: Transition.zoom
             ),
           lottiePath: "assets/lottie/moov_internet.json",
