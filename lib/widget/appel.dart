@@ -1,9 +1,6 @@
-import 'dart:async';
-
 import 'package:cashmanager/controller/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lottie/lottie.dart';
 
 class Appels extends StatelessWidget {
   Appels({ Key? key }) : super(key: key);
@@ -33,22 +30,11 @@ class Appels extends StatelessWidget {
                       print(textEditingController.text);
                       textEditingController.text = "";
                       Get.close(0);
-                      Get.defaultDialog();
+                      controller.openDialog();
                     }
-                    else{
+                    else if(controller.autre.value==false){
                       Get.close(0);
-                      Get.defaultDialog(
-                        title: "",
-                        content: Column(
-                          children: [
-                            Lottie.asset("assets/lottie/moov_success.json",height: 140),
-                            const Padding(
-                              padding: EdgeInsets.only(left: 10,right:10),
-                              child: Text("Votre demande est en cours de traitement",textAlign: TextAlign.center,),
-                            )
-                            ]
-                        )
-                      );
+                      controller.openDialog();
 
                     }
 
