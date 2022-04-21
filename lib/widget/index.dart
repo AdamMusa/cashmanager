@@ -34,7 +34,7 @@ class Index extends StatelessWidget {
     return GridView.count(
       childAspectRatio: .9,
       primary: false,
-      padding: const EdgeInsets.only(left: 20, right: 20),
+      padding: const EdgeInsets.only(left: 20, right: 20,top: 10),
       crossAxisSpacing: 10,
       mainAxisSpacing: 10,
       crossAxisCount: 2,
