@@ -10,6 +10,7 @@ class Appels extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.indigo,
         title: const Text("Appels"),
       ),
       body: ListView.builder(
@@ -38,7 +39,12 @@ class Appels extends StatelessWidget {
 
                     }
 
-                  }, child: const Text("ACTIVEZ"))
+                  }, child: const Text("ACTIVEZ"),
+                  
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.indigo
+                  )
+                  )
                 ],
                
                 content: Obx(
@@ -47,7 +53,7 @@ class Appels extends StatelessWidget {
                       CheckboxListTile(
                         shape: const StadiumBorder(
                           side: BorderSide(
-                            color: Colors.blue
+                            color: Colors.indigo
                           )
                         ),
                         title: const Text("Activer pour un autre"),
@@ -66,7 +72,7 @@ class Appels extends StatelessWidget {
                               focusedBorder: OutlineInputBorder(
                                  borderRadius: BorderRadius.circular(40),
                                  borderSide: const BorderSide(
-                                   color: Colors.blue
+                                   color: Colors.indigo
                                  )
                               ),
                               errorBorder: OutlineInputBorder(

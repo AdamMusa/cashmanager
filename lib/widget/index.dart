@@ -41,7 +41,7 @@ class Index extends StatelessWidget {
       children: <Widget>[
         customItem(
             onTap: () => Get.to(() => Appels(), transition: Transition.zoom),
-            lottiePath: "assets/lottie/moov_internet.json",
+            lottiePath: "assets/lottie/moov.json",
             text: "Activez les Appels"),
         customItem(
             onTap: () {},
@@ -49,7 +49,7 @@ class Index extends StatelessWidget {
             text: "Activez les SMS"),
         customItem(
             onTap: () {},
-            lottiePath: "assets/lottie/moov.json",
+            lottiePath: "assets/lottie/moov_internet.json",
             text: "Rechargez les Megas"),
         customItem(
             onTap: () {},
@@ -80,3 +80,4 @@ class Index extends StatelessWidget {
 // https://edit.lottiefiles.com/?src=https%3A%2F%2Fassets4.lottiefiles.com%2Fpackages%2Flf20_zvmuqszh.json
 // https://edit.lottiefiles.com/?src=https%3A%2F%2Fassets10.lottiefiles.com%2Fprivate_files%2Flf30_fbn8elpr.json
 // https://edit.lottiefiles.com/?src=https%3A%2F%2Fassets4.lottiefiles.com%2Fprivate_files%2Flf30_jlatyxnr.json
+// https://edit.lottiefiles.com/?src=https%3A%2F%2Fassets4.lottiefiles.com%2Fpackages%2Flf20_zvmuqszh.json

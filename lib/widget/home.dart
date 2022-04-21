@@ -29,7 +29,7 @@ Widget switchScreen(value){
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text("CashManager"),
+        title: const Text("MoovCM"),
         backgroundColor: Colors.indigo,
       ),
         bottomNavigationBar: CurvedNavigationBar(
