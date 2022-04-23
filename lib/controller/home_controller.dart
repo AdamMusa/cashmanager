@@ -29,12 +29,19 @@ class HomeController extends GetxController{
   }
     
   formater(code,value){
-      final newValue = code.replaceAll(RegExp('(moi ou autre)'), '');
-      return newValue.replaceAll(RegExp(r'\(.*\)'), value);
+      if(number.value ==""){
+       return formaterHelper(code, value);
+      }
+      var newValue = formaterHelper(code, value);
+      return newValue.replaceAll(RegExp('num'), number.value);
   }
 
-  sendCode(){
-    UssdAdvanced.sendAdvancedUssd(subscriptionId: 1,code: formater("", ""));
+  formaterHelper(code,value){
+    var newValue = code.replaceAll(RegExp('(moi ou autre)'), '');
+    return newValue.replaceAll(RegExp(r'\(.*\)'), value);
+  }
+  sendCode(code,value){
+    UssdAdvanced.sendAdvancedUssd(subscriptionId: 1,code: formater(code, value));
   }
 
 }
