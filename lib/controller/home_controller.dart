@@ -5,6 +5,12 @@ import 'package:lottie/lottie.dart';
 import 'package:ussd_advanced/ussd_advanced.dart';
 
 class HomeController extends GetxController{
+   var dropdwon = ["Cameroun","Congo","Centrafrique","Gabon","Guinée Equatorial"].obs;
+   var dropdwonCameroun = ["Orange Money","MNT Money","Yup","UE Mobile Money","Guinée Equatorial"].obs;
+   var dropdwonCongo = ["Cameroun","Congo","Centrafrique","Gabon","Guinée Equatorial"].obs;
+   var dropdwonCentrafrique = ["Cameroun","Congo","Centrafrique","Gabon","Guinée Equatorial"].obs;
+   var dropdwonGabon = ["Cameroun","Congo","Centrafrique","Gabon","Guinée Equatorial"].obs;
+   var dropdwonGuine = ["Cameroun","Congo","Centrafrique","Gabon","Guinée Equatorial"].obs;
    var index = 0.obs;
    var autre = false.obs;
    var number = "".obs;
