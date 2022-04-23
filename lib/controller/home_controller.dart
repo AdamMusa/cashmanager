@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
+import 'package:ussd_advanced/ussd_advanced.dart';
 
 class HomeController extends GetxController{
    var index = 0.obs;
@@ -27,6 +28,13 @@ class HomeController extends GetxController{
     );
   }
     
+  formater(code,value){
+      final newValue = code.replaceAll(RegExp('(moi ou autre)'), '');
+      return newValue.replaceAll(RegExp(r'\(.*\)'), value);
+  }
 
+  sendCode(){
+    UssdAdvanced.sendAdvancedUssd(subscriptionId: 1,code: formater("", ""));
+  }
 
 }
