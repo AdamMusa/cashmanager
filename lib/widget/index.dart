@@ -1,5 +1,5 @@
 import 'package:cashmanager/widget/appel.dart';
-import 'package:flutter/gestures.dart';
+import 'package:cashmanager/widget/send_money.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
@@ -50,19 +50,19 @@ class Index extends StatelessWidget {
         customItem(
             onTap: () {},
             lottiePath: "assets/lottie/moov_internet.json",
-            text: "Rechargez les Megas"),
+            text: "Réchargez les Megas"),
         customItem(
-            onTap: () {},
+            onTap: () =>Get.to(()=>SendMoney()),
             lottiePath: "assets/lottie/moov_money.json",
             text: "Envoyez l'argent"),
         customItem(
             onTap: () {},
             lottiePath: "assets/lottie/reabonner.json",
-            text: "Reabonnez"),
+            text: "Réabonnez"),
         customItem(
             onTap: () {},
             lottiePath: "assets/lottie/electricity.json",
-            text: "Rechargez"),
+            text: "Réchargez"),
       ],
     );
   }

@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 class Appels extends StatelessWidget {
   Appels({ Key? key }) : super(key: key);
+  final _formKey = GlobalKey<FormState>();
   final controller = Get.put(HomeController());
   final TextEditingController textEditingController = TextEditingController();
   @override
@@ -27,17 +28,19 @@ class Appels extends StatelessWidget {
                 actions: [
                   TextButton(onPressed: ()=>Get.close(0), child: const Text("RETOUR",style: TextStyle(color:Colors.grey),)),
                   ElevatedButton(onPressed: (){
-                    if(textEditingController.text.length==8){
-                      print(textEditingController.text);
+                    if(textEditingController.text.length==8 && controller.autre.value){
+                      // print(textEditingController.text);
                       textEditingController.text = "";
                       Get.close(0);
                       controller.openDialog();
                     }
-                    else if(controller.autre.value==false){
+                    else {
                       Get.close(0);
                       controller.openDialog();
 
                     }
+                    return ;
+                    
 
                   }, child: const Text("ACTIVEZ"),
                   
@@ -63,6 +66,7 @@ class Appels extends StatelessWidget {
                       Visibility(
                         visible: controller.autre.value,
                         child:Form(
+                          key: _formKey,
                           autovalidateMode: AutovalidateMode.always,
                           child: TextFormField(
                             controller: textEditingController,
@@ -90,7 +94,7 @@ class Appels extends StatelessWidget {
                             
                             onSaved: (value){
                               if(value!.length==8){
-                                print(value);
+                                // print(value);
                                 value = "";
                                 
                               }
