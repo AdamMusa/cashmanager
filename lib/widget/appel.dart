@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class Appels extends StatelessWidget {
-  Appels({ Key? key }) : super(key: key);
+  String title = "";
+  Appels({ Key? key ,required this.title}) : super(key: key);
   final _formKey = GlobalKey<FormState>();
   final controller = Get.put(HomeController());
   final TextEditingController textEditingController = TextEditingController();
@@ -12,7 +13,7 @@ class Appels extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-        title: const Text("Appels"),
+        title: Text(title),
       ),
       body: ListView.builder(
         itemCount: 12,

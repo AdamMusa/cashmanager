@@ -1,4 +1,5 @@
 import 'package:cashmanager/widget/appel.dart';
+import 'package:cashmanager/widget/choice_option_appel.dart';
 import 'package:cashmanager/widget/send_money.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -40,7 +41,7 @@ class Index extends StatelessWidget {
       crossAxisCount: 2,
       children: <Widget>[
         customItem(
-            onTap: () => Get.to(() => Appels(), transition: Transition.zoom),
+            onTap: () => Get.to(() => const ChoiceOptionAppel(), transition: Transition.zoom),
             lottiePath: "assets/lottie/moov.json",
             text: "Activez les Appels"),
         customItem(
