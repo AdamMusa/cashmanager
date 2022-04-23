@@ -2,6 +2,7 @@ import 'package:cashmanager/controller/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+// ignore: must_be_immutable
 class Appels extends StatelessWidget {
   String title = "";
   Appels({ Key? key ,required this.title}) : super(key: key);
@@ -24,6 +25,7 @@ class Appels extends StatelessWidget {
             elevation: 4,
             child: ListTile(
               onTap: ()=>Get.defaultDialog(
+                barrierDismissible: false,
                 radius: 10,
                 title: "",
                 actions: [
