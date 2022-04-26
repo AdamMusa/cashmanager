@@ -8,9 +8,11 @@ class SendMoney extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.indigo
+        backgroundColor: Colors.indigo,
+        title:const  Text("Envoyez l'argent")
       ),
       body: Container(
+        alignment: Alignment.center,
         padding: const EdgeInsets.only(left:15,right: 15),
         child: SingleChildScrollView(
           child: Form(

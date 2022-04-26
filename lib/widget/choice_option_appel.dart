@@ -23,17 +23,18 @@ class ChoiceOptionAppel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.indigo,
         title: const Text("Choisir une option"),
       ),
-      body: Padding(
+      body: Container(
+        alignment: Alignment.center,
         padding: const EdgeInsets.only(left: 15,right: 15),
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(height: 30),
               Lottie.asset("assets/lottie/moov.json",height: 250),
               const SizedBox(height: 15),
              itemOption(context,onTap: ()=>Get.to(
