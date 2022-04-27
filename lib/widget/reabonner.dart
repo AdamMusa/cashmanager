@@ -23,15 +23,13 @@ class Reabonner extends StatelessWidget {
             autovalidateMode: AutovalidateMode.always,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                  const SizedBox(height: 10,),
-                
+              children: [                
                   Lottie.asset("assets/lottie/reabonner.json",height: 200),
                   const SizedBox(height: 20,),
                   TextFormField(
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
-                      prefixIcon: const Icon(Icons.key),
+                      suffixIcon: const Icon(Icons.key),
                       hintText: "Entrer le nombre de decodeur",
                       enabledBorder: OutlineInputBorder(
                         borderSide: const  BorderSide(
@@ -49,7 +47,7 @@ class Reabonner extends StatelessWidget {
                     keyboardType: TextInputType.number,
                      decoration: InputDecoration(
                       hintText: "Entrer le montant",
-                      prefixIcon: const Icon(Icons.monetization_on),
+                      suffixIcon: const Icon(Icons.monetization_on),
                       enabledBorder: OutlineInputBorder(
                         
                         borderSide: const  BorderSide(
@@ -68,7 +66,7 @@ class Reabonner extends StatelessWidget {
                     obscureText: true,
                     decoration: InputDecoration(
                       hintText: "Entrer votre mot de passe",
-                      prefixIcon: const Icon(Icons.visibility),
+                      suffixIcon: const Icon(Icons.visibility),
                       enabledBorder: OutlineInputBorder(
                         borderSide: const  BorderSide(
                           color:Colors.indigo

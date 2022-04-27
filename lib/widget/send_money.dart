@@ -24,15 +24,13 @@ class SendMoney extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                  const SizedBox(height: 10,),
-                
                   Lottie.asset("assets/lottie/moov_money.json",height: 200),
                   const SizedBox(height: 20,),
                   TextFormField(
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       hintText: "Entrer le numero du beneficiaire",
-                      prefixIcon: const Icon(Icons.perm_identity),
+                      suffixIcon: const Icon(Icons.perm_identity),
                       enabledBorder: OutlineInputBorder(
                         borderSide: const  BorderSide(
                           color:Colors.indigo
@@ -49,7 +47,7 @@ class SendMoney extends StatelessWidget {
                       keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                       hintText: "Entrer le montant",
-                      prefixIcon: const Icon(Icons.monetization_on),
+                     suffixIcon: const Icon(Icons.monetization_on),
                       enabledBorder: OutlineInputBorder(
                         borderSide: const  BorderSide(
                           color:Colors.indigo
@@ -66,7 +64,7 @@ class SendMoney extends StatelessWidget {
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       hintText: "Entrer votre mot de passe",
-                      prefixIcon: const Icon(Icons.visibility),
+                     suffixIcon: const Icon(Icons.visibility),
                       enabledBorder: OutlineInputBorder(
                         borderSide: const  BorderSide(
                           color:Colors.indigo
