@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-class SendMoney extends StatelessWidget {
-  SendMoney({ Key? key }) : super(key: key);
+class Reabonner extends StatelessWidget {
+  Reabonner({ Key? key }) : super(key: key);
   final _formKey = GlobalKey<FormState>();
 
   @override
@@ -9,7 +9,7 @@ class SendMoney extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-        title:const  Text("Envoyez l'argent")
+        title:const  Text("Reabonner")
       ),
       body: Container(
         alignment: Alignment.center,
@@ -23,30 +23,13 @@ class SendMoney extends StatelessWidget {
               children: [
                   const SizedBox(height: 10,),
                 
-                  Lottie.asset("assets/lottie/moov_money.json",height: 200),
+                  Lottie.asset("assets/lottie/reabonner.json",height: 200),
                   const SizedBox(height: 20,),
                   TextFormField(
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
-                      helperText: "Entrer le numero du beneficiaire",
-                      prefixIcon: const Icon(Icons.perm_identity),
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: const  BorderSide(
-                          color:Colors.indigo
-                        ),
-                        borderRadius: BorderRadius.circular(20)
-                      ),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20)
-                      )
-                    ),
-                  ),
-                  const SizedBox(height: 15,),
-                  TextFormField(
-                      keyboardType: TextInputType.number,
-                      decoration: InputDecoration(
-                      helperText: "Entrer le montant",
-                      prefixIcon: const Icon(Icons.monetization_on),
+                      prefixIcon: const Icon(Icons.key),
+                      helperText: "Entrer le nombre de decodeur",
                       enabledBorder: OutlineInputBorder(
                         borderSide: const  BorderSide(
                           color:Colors.indigo
@@ -61,6 +44,25 @@ class SendMoney extends StatelessWidget {
                   const SizedBox(height: 15,),
                   TextFormField(
                     keyboardType: TextInputType.number,
+                     decoration: InputDecoration(
+                      helperText: "Entrer le montant",
+                      prefixIcon: const Icon(Icons.monetization_on),
+                      enabledBorder: OutlineInputBorder(
+                        
+                        borderSide: const  BorderSide(
+                          color:Colors.indigo
+                        ),
+                        borderRadius: BorderRadius.circular(20)
+                      ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20)
+                      )
+                    ),
+                  ),
+                  const SizedBox(height: 15,),
+                  TextFormField(
+                    keyboardType: TextInputType.number,
+                    obscureText: true,
                     decoration: InputDecoration(
                       helperText: "Entrer votre mot de passe",
                       prefixIcon: const Icon(Icons.visibility),
