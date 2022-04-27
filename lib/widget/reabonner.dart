@@ -1,3 +1,4 @@
+import 'package:delayed_display/delayed_display.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 class Reabonner extends StatelessWidget {
@@ -9,7 +10,9 @@ class Reabonner extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-        title:const  Text("Reabonner")
+        title:const DelayedDisplay(
+          delay: Duration(seconds: 1),
+          child: Text("Reabonner"))
       ),
       body: Container(
         alignment: Alignment.center,
@@ -29,7 +32,7 @@ class Reabonner extends StatelessWidget {
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       prefixIcon: const Icon(Icons.key),
-                      helperText: "Entrer le nombre de decodeur",
+                      hintText: "Entrer le nombre de decodeur",
                       enabledBorder: OutlineInputBorder(
                         borderSide: const  BorderSide(
                           color:Colors.indigo
@@ -45,7 +48,7 @@ class Reabonner extends StatelessWidget {
                   TextFormField(
                     keyboardType: TextInputType.number,
                      decoration: InputDecoration(
-                      helperText: "Entrer le montant",
+                      hintText: "Entrer le montant",
                       prefixIcon: const Icon(Icons.monetization_on),
                       enabledBorder: OutlineInputBorder(
                         
@@ -64,7 +67,7 @@ class Reabonner extends StatelessWidget {
                     keyboardType: TextInputType.number,
                     obscureText: true,
                     decoration: InputDecoration(
-                      helperText: "Entrer votre mot de passe",
+                      hintText: "Entrer votre mot de passe",
                       prefixIcon: const Icon(Icons.visibility),
                       enabledBorder: OutlineInputBorder(
                         borderSide: const  BorderSide(
@@ -78,15 +81,18 @@ class Reabonner extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 20,),
-                  ElevatedButton(onPressed: (){}, 
-                  child: const Text("Envoyez"),
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.indigo,
-                    minimumSize: const Size(200,40),
-                    shape: const StadiumBorder(),
-                    elevation: 4
-                  ),
-                )
+                  DelayedDisplay(
+                    delay: const Duration(seconds: 1),
+                    child: ElevatedButton(onPressed: (){}, 
+                    child: const Text("Envoyez"),
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.indigo,
+                      minimumSize: const Size(200,40),
+                      shape: const StadiumBorder(),
+                      elevation: 4
+                    ),
+                                  ),
+                  )
              ],
             )
           ),

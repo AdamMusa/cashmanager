@@ -1,3 +1,4 @@
+import 'package:delayed_display/delayed_display.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 class Rechargez extends StatelessWidget {
@@ -9,7 +10,7 @@ class Rechargez extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-        title:const  Text("Rechargez")
+        title:const DelayedDisplay(delay: Duration(seconds: 1),child: Text("Rechargez"))
       ),
       body: Container(
         alignment: Alignment.center,
@@ -28,7 +29,7 @@ class Rechargez extends StatelessWidget {
                   TextFormField(
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
-                      helperText: "Entrer le numero du conteur",
+                      hintText: "Entrer le numero du conteur",
                       prefixIcon: const Icon(Icons.key),
                       enabledBorder: OutlineInputBorder(
                         borderSide: const  BorderSide(
@@ -45,7 +46,7 @@ class Rechargez extends StatelessWidget {
                   TextFormField(
                     keyboardType: TextInputType.number,
                      decoration: InputDecoration(
-                      helperText: "Entrer le montant",
+                      hintText: "Entrer le montant",
                       prefixIcon: const Icon(Icons.monetization_on),
                       enabledBorder: OutlineInputBorder(
                         borderSide: const  BorderSide(
@@ -63,7 +64,7 @@ class Rechargez extends StatelessWidget {
                     keyboardType: TextInputType.number,
                     obscureText: true,
                     decoration: InputDecoration(
-                      helperText: "Entrer votre mot de passe",
+                      hintText: "Entrer votre mot de passe",
                       prefixIcon: const Icon(Icons.visibility),
                       enabledBorder: OutlineInputBorder(
                         borderSide: const  BorderSide(
@@ -77,15 +78,18 @@ class Rechargez extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 20,),
-                  ElevatedButton(onPressed: (){}, 
-                  child: const Text("Envoyez"),
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.indigo,
-                    minimumSize: const Size(200,40),
-                    shape: const StadiumBorder(),
-                    elevation: 4
-                  ),
-                )
+                  DelayedDisplay(
+                    delay: const Duration(seconds: 1),
+                    child: ElevatedButton(onPressed: (){}, 
+                    child: const Text("Envoyez"),
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.indigo,
+                      minimumSize: const Size(200,40),
+                      shape: const StadiumBorder(),
+                      elevation: 4
+                    ),
+                                  ),
+                  )
              ],
             )
           ),
