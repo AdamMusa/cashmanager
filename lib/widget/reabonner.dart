@@ -15,7 +15,6 @@ class Reabonner extends StatelessWidget {
           child: Text("Reabonner"))
       ),
       body: Container(
-        alignment: Alignment.center,
         padding: const EdgeInsets.only(left:15,right: 15),
         child: SingleChildScrollView(
           child: Form(
@@ -23,9 +22,11 @@ class Reabonner extends StatelessWidget {
             autovalidateMode: AutovalidateMode.always,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [                
+              children: [             
+                  const SizedBox(height: 15,),
+
                   Lottie.asset("assets/lottie/reabonner.json",height: 200),
-                  const SizedBox(height: 20,),
+                  const SizedBox(height: 30,),
                   TextFormField(
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(

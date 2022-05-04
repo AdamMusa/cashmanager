@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:ussd_advanced/ussd_advanced.dart';
 
+import '../database/database.dart';
+
 class HomeController extends GetxController{
    var dropdwon = ["Cameroun","Congo","Centrafrique","Gabon","Guinée Equatorial"].obs;
    var dropdwonCameroun = ["Orange Money","MNT Money","Yup","UE Mobile Money","Guinée Equatorial"].obs;
@@ -15,9 +17,18 @@ class HomeController extends GetxController{
    var autre = false.obs;
    var number = "".obs;
    var validate = false.obs;
+
+   final db = Get.put(DataBase());
    switcher(value){
      index.value = value;
    }
+  
+
+  @override
+  void onInit() {
+    super.onInit();
+    db.readDataFromDatabase();
+  }
 
   openDialog(){
     return Get.defaultDialog(

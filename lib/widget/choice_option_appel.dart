@@ -1,10 +1,11 @@
+import 'package:cashmanager/database/database.dart';
 import 'package:cashmanager/widget/appel.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 class ChoiceOptionAppel extends StatelessWidget {
-  const ChoiceOptionAppel({ Key? key }) : super(key: key);
-
+  ChoiceOptionAppel({ Key? key }) : super(key: key);
+  final db = Get.find<DataBase>();
   Widget itemOption(BuildContext context,{VoidCallback? onTap,String? text}){
     return GestureDetector(
       onTap: onTap,
@@ -29,7 +30,6 @@ class ChoiceOptionAppel extends StatelessWidget {
         title: const Text("Choisir une option"),
       ),
       body: Container(
-        alignment: Alignment.center,
         padding: const EdgeInsets.only(left: 15,right: 15),
         child: SingleChildScrollView(
           child: Column(
@@ -38,11 +38,11 @@ class ChoiceOptionAppel extends StatelessWidget {
               Lottie.asset("assets/lottie/moov.json",height: 250),
               const SizedBox(height: 15),
              itemOption(context,onTap: ()=>Get.to(
-               ()=>Appels(title: "Go Night",),
+               ()=>Appels(title: "Kattir Appels Moov",data: db.katirAppel.value),
                transition: Transition.leftToRightWithFade
                ),
-               text: "Go night"),
-             itemOption(context,onTap: (){},text: "Go Night"),
+               text: "Kattir Appels Moov"),
+             itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Katir MIX", data: db.katirAppelMix.value)),text: "Katir MIX"),
              itemOption(context,onTap: (){},text: "Go Night"),
             ],
           ),

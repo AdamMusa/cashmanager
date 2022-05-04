@@ -43,7 +43,7 @@ class Index extends StatelessWidget {
       crossAxisCount: 2,
       children: <Widget>[
         customItem(
-            onTap: () => Get.to(() => const ChoiceOptionAppel(), transition: Transition.zoom),
+            onTap: () => Get.to(() => ChoiceOptionAppel(), transition: Transition.zoom),
             lottiePath: "assets/lottie/moov.json",
             text: "Activez les Appels"),
         customItem(
