@@ -90,140 +90,116 @@
                 "code": "*111*2*6*5#"
             }
         ],
-        "Forfai Ziada": {
-            "Ziada 1jr": [
-                {
-                    "price": "500F",
-                    "min": "3500Bonus",
-                    "sms": "SMS",
-                    "data": "",
-                    "validity": "1jr",
-                    "code": "*111*2*6*7*1*1#"
-                }
-            ],
-            "Ziada 2jrs": [
-                {
-                    "price": "1000F",
-                    "min": "7000Bonus",
-                    "sms": "SMS",
-                    "data": "",
-                    "validity": "2jr",
-                    "code": "*111*2*6*7*2*1#"
-                }
-            ],
-            "Ziada 7jrs": [
-                {
-                    "price": "2000F",
-                    "min": "10000Bonus",
-                    "sms": "SMS",
-                    "data": "",
-                    "validity": "7jr",
-                    "code": "*111*2*6*7*3*1#"
-                }
-            ],
-            "Ziada 15jrs": [
-                {
-                    "price": "3000F",
-                    "min": "15000Bonus",
-                    "sms": "SMS",
-                    "data": "",
-                    "validity": "15jr",
-                    "code": "*111*2*6*7*4*1#"
-                }
-            ],
-            "Ziada 30jrs": [
-                {
-                    "price": "5000F",
-                    "min": "25000Bonus",
-                    "sms": "SMS",
-                    "data": "",
-                    "validity": "30jr",
-                    "code": "*111*2*6*7*5*1#"
-                }
-            ],
-            "Ziada Moov money": [
-                {
-                    "price": "",
-                    "min": "",
-                    "sms": "",
-                    "data": "",
-                    "validity": "1jr",
-                    "code": "*111*2*6*7*6*(1 ou 2)*num*montant*pin#"
-                }
-            ]
-        },
-        "Katir MIX": {
-            "MIX 500": [
-                {
-                    "price": "500F",
-                    "min": "30Min",
-                    "sms": "",
-                    "data": "130MB",
-                    "validity": "1jr",
-                    "code": "*111*3*1#"
-                }
-            ],
-            "MIX 1000": [
-                {
-                    "price": "1000F",
-                    "min": "1H",
-                    "sms": "",
-                    "data": "1GB",
-                    "validity": "2jr",
-                    "code": "*111*3*2#"
-                }
-            ],
-            "MIX 3000": [
-                {
-                    "price": "3000F",
-                    "min": "2H",
-                    "sms": "",
-                    "data": "1.5GB",
-                    "validity": "7jr",
-                    "code": "*111*3*3#"
-                }
-            ],
-            "MIX 5000": [
-                {
-                    "price": "5000F",
-                    "min": "5H",
-                    "sms": "",
-                    "data": "1.5GB",
-                    "validity": "14jr",
-                    "code": "*111*3*4#"
-                }
-            ],
-            "MIX 10000": [
-                {
-                    "price": "10000F",
-                    "min": "10H",
-                    "sms": "",
-                    "data": "4GB",
-                    "validity": "30jrs",
-                    "code": "*111*3*5#"
-                }
-            ],
-            "MIX 12000": [
-                {
-                    "price": "12000F",
-                    "min": "3000Min",
-                    "sms": "SMS Illimite",
-                    "data": "5GB",
-                    "validity": "30jrs",
-                    "code": "*111*3*6#"
-                }
-            ],
-            "MIX 20000": [
-                {
-                    "price": "20000F",
-                    "min": "3000Min",
-                    "sms": "SMS Illimite",
-                    "data": "20GB",
-                    "validity": "30jrs",
-                    "code": "*111*3*6#"
-                }
-            ]
-        },
+        "Forfai Ziada": [
+            {
+                "price": "500F",
+                "min": "3500Bonus",
+                "sms": "SMS",
+                "data": "",
+                "validity": "1jr",
+                "code": "*111*2*6*7*1*1#"
+            },
+            {
+                "price": "1000F",
+                "min": "7000Bonus",
+                "sms": "SMS",
+                "data": "",
+                "validity": "2jr",
+                "code": "*111*2*6*7*2*1#"
+            },
+            {
+                "price": "2000F",
+                "min": "10000Bonus",
+                "sms": "SMS",
+                "data": "",
+                "validity": "7jr",
+                "code": "*111*2*6*7*3*1#"
+            },
+            {
+                "price": "3000F",
+                "min": "15000Bonus",
+                "sms": "SMS",
+                "data": "",
+                "validity": "15jr",
+                "code": "*111*2*6*7*4*1#"
+            },
+            {
+                "price": "5000F",
+                "min": "25000Bonus",
+                "sms": "SMS",
+                "data": "",
+                "validity": "30jr",
+                "code": "*111*2*6*7*5*1#"
+            }
+        ],
+        "Ziada par moov money": [
+            {
+                "price": "",
+                "min": "",
+                "sms": "",
+                "data": "",
+                "validity": "1jr",
+                "code": "*111*2*6*7*6*(1 ou 2)*num*montant*pin#"
+            }
+        ],
+        "Katir MIX": [
+            {
+                "price": "500F",
+                "min": "30Min",
+                "sms": "",
+                "data": "130MB",
+                "validity": "1jr",
+                "code": "*111*3*1#"
+            },
+            {
+                "price": "1000F",
+                "min": "1H",
+                "sms": "",
+                "data": "1GB",
+                "validity": "2jr",
+                "code": "*111*3*2#"
+            },
+            {
+                "price": "3000F",
+                "min": "2H",
+                "sms": "",
+                "data": "1.5GB",
+                "validity": "7jr",
+                "code": "*111*3*3#"
+            },
+            {
+                "price": "5000F",
+                "min": "5H",
+                "sms": "",
+                "data": "1.5GB",
+                "validity": "14jr",
+                "code": "*111*3*4#"
+            },
+            {
+                "price": "10000F",
+                "min": "10H",
+                "sms": "",
+                "data": "4GB",
+                "validity": "30jrs",
+                "code": "*111*3*5#"
+            },
+            {
+                "price": "12000F",
+                "min": "3000Min",
+                "sms": "SMS Illimite",
+                "data": "5GB",
+                "validity": "30jrs",
+                "code": "*111*3*6#"
+            },
+            {
+                "price": "20000F",
+                "min": "3000Min",
+                "sms": "SMS Illimite",
+                "data": "20GB",
+                "validity": "30jrs",
+                "code": "*111*3*6#"
+            }
+        ],
         "Katir Internet": [
             {
                 "price": "100F",
@@ -379,7 +355,7 @@
             }
         ],
         "CHABAB": {
-            "Forfaits NUit": [
+            "Forfaits Nuit": [
                 {
                     "price": "100F",
                     "min": "",
@@ -414,98 +390,86 @@
                 }
             ]
         },
-        "Kattir International": {
-            "Kattir International Monde 600F": [
-                {
-                    "price": "600F",
-                    "min": "3Min",
-                    "sms": "",
-                    "data": "",
-                    "validity": "1jr",
-                    "code": "*111*5*1*1#"
-                }
-            ],
-            "Kattir International Monde 1200F": [
-                {
-                    "price": "1200F",
-                    "min": "6Min",
-                    "sms": "",
-                    "data": "",
-                    "validity": "3jr",
-                    "code": "*111*5*2*1#"
-                }
-            ],
-            "Kattir International Monde 2000F": [
-                {
-                    "price": "2000F",
-                    "min": "10Min",
-                    "sms": "",
-                    "data": "",
-                    "validity": "7jr",
-                    "code": "*111*5*3*1#"
-                }
-            ],
-            "Kattir International Monde 5000F": [
-                {
-                    "price": "5000F",
-                    "min": "30Min",
-                    "sms": "",
-                    "data": "",
-                    "validity": "30jr",
-                    "code": "*111*5*4*1#"
-                }
-            ],
-            "Kattir  300F dans tous les Pays": [
-                {
-                    "price": "300F",
-                    "min": "2Min",
-                    "sms": "",
-                    "data": "",
-                    "validity": "1jr",
-                    "code": "*111*5*5*1*1#"
-                }
-            ],
-            "Kattir  500F Canada, Inde, Chine, USA": [
-                {
-                    "price": "500F",
-                    "min": "7Min",
-                    "sms": "",
-                    "data": "",
-                    "validity": "2jr",
-                    "code": "*111*5*5*2*1#"
-                }
-            ],
-            "Kattir  1250F Arabie saoudite, Turquie, Egypte, France, Nigria": [
-                {
-                    "price": "1250F",
-                    "min": "10Min",
-                    "sms": "",
-                    "data": "",
-                    "validity": "7jr",
-                    "code": "*111*5*5*3*1#"
-                }
-            ],
-            "Kattir  Afrique 1000F": [
-                {
-                    "price": "1000F",
-                    "min": "4Min",
-                    "sms": "",
-                    "data": "",
-                    "validity": "2jr",
-                    "code": "*111*5*5*4*1#"
-                }
-            ],
-            "Kattir Monde 10000F": [
-                {
-                    "price": "10000F",
-                    "min": "65Min",
-                    "sms": "",
-                    "data": "",
-                    "validity": "30jr",
-                    "code": "*111*5*5*5*1#"
-                }
-            ]
-        },
+        "Kattir International": [
+            {
+                "price": "600F",
+                "min": "3Min",
+                "sms": "",
+                "data": "",
+                "validity": "1jr",
+                "code": "*111*5*1*1#"
+            },
+            {
+                "price": "1200F",
+                "min": "6Min",
+                "sms": "",
+                "data": "",
+                "validity": "3jr",
+                "code": "*111*5*2*1#"
+            },
+            {
+                "price": "2000F",
+                "min": "10Min",
+                "sms": "",
+                "data": "",
+                "validity": "7jr",
+                "code": "*111*5*3*1#"
+            },
+            {
+                "price": "5000F",
+                "min": "30Min",
+                "sms": "",
+                "data": "",
+                "validity": "30jr",
+                "code": "*111*5*4*1#"
+            },
+            {
+                "price": "300F",
+                "min": "2Min",
+                "sms": "",
+                "data": "",
+                "validity": "1jr",
+                "code": "*111*5*5*1*1#"
+            },
+            {
+                "price": "10000F",
+                "min": "65Min",
+                "sms": "",
+                "data": "",
+                "validity": "30jr",
+                "code": "*111*5*5*5*1#"
+            }
+        ],
+        "Kattir  500F Canada, Inde, Chine, USA": [
+            {
+                "price": "500F",
+                "min": "7Min",
+                "sms": "",
+                "data": "",
+                "validity": "2jr",
+                "code": "*111*5*5*2*1#"
+            }
+        ],
+        "Kattir  1250F Arabie saoudite, Turquie, Egypte, France, Nigria": [
+            {
+                "price": "1250F",
+                "min": "10Min",
+                "sms": "",
+                "data": "",
+                "validity": "7jr",
+                "code": "*111*5*5*3*1#"
+            }
+        ],
+        "Kattir  Afrique 1000F": [
+            {
+                "price": "1000F",
+                "min": "4Min",
+                "sms": "",
+                "data": "",
+                "validity": "2jr",
+                "code": "*111*5*5*4*1#"
+            }
+        ],
         "Kattir SMS": [
             {
                 "price": "30F",
@@ -954,78 +918,64 @@
                 }
             ],
             "Mon Compte": {
-                "Solde": [
-                    {
-                        "price": "",
-                        "min": "",
-                        "sms": "",
-                        "data": "",
-                        "validity": "",
-                        "code": "*111*1*1#"
-                    }
-                ],
-                "compte bonus": [
-                    {
-                        "price": "",
-                        "min": "",
-                        "sms": "",
-                        "data": "",
-                        "validity": "",
-                        "code": "*111*1*2#"
-                    }
-                ],
-                "Mon numéro": [
-                    {
-                        "price": "",
-                        "min": "",
-                        "sms": "",
-                        "data": "",
-                        "validity": "",
-                        "code": "*111*1*3#"
-                    }
-                ],
-                "Mon solde moov money": [
-                    {
-                        "price": "",
-                        "min": "",
-                        "sms": "",
-                        "data": "",
-                        "validity": "",
-                        "code": "*111*1*5*code#"
-                    }
-                ]
+                "Solde": {
+                    "price": "",
+                    "min": "",
+                    "sms": "",
+                    "data": "",
+                    "validity": "",
+                    "code": "*111*1*1#"
+                },
+                "compte bonus": {
+                    "price": "",
+                    "min": "",
+                    "sms": "",
+                    "data": "",
+                    "validity": "",
+                    "code": "*111*1*2#"
+                },
+                "Mon numéro": {
+                    "price": "",
+                    "min": "",
+                    "sms": "",
+                    "data": "",
+                    "validity": "",
+                    "code": "*111*1*3#"
+                },
+                "Mon solde moov money": {
+                    "price": "",
+                    "min": "",
+                    "sms": "",
+                    "data": "",
+                    "validity": "",
+                    "code": "*111*1*5*code#"
+                }
             },
             "Moov money": {
-                "Envoi argent": [
-                    {
-                        "price": "",
-                        "min": "",
-                        "sms": "",
-                        "data": "",
-                        "validity": "",
-                        "code": "*800*1*num_benificiaire*montant*code#"
-                    }
-                ],
-                "Achat credit(100% Bonus)": [
-                    {
-                        "price": "",
-                        "min": "",
-                        "sms": "",
-                        "data": "",
-                        "validity": "",
-                        "code": "*800*2*(1 ou 2)*montant*code#"
-                    }
-                ],
-                "Retrait argent": [
-                    {
-                        "price": "",
-                        "min": "",
-                        "sms": "",
-                        "data": "",
-                        "validity": "",
-                        "code": "*800*3*num_agent*montant*code#"
-                    }
-                ],
+                "Envoi argent": {
+                    "price": "",
+                    "min": "",
+                    "sms": "",
+                    "data": "",
+                    "validity": "",
+                    "code": "*800*1*num_benificiaire*montant*code#"
+                },
+                "Achat credit(100% Bonus)": {
+                    "price": "",
+                    "min": "",
+                    "sms": "",
+                    "data": "",
+                    "validity": "",
+                    "code": "*800*2*(1 ou 2)*montant*code#"
+                },
+                "Retrait argent": {
+                    "price": "",
+                    "min": "",
+                    "sms": "",
+                    "data": "",
+                    "validity": "",
+                    "code": "*800*3*num_agent*montant*code#"
+                },
                 "Achat kattir": {
                     "Kattir vers Moov": [
                         {
@@ -1381,143 +1331,109 @@
                             "code": "*800*5*5*5*(1 ou 2)*code#"
                         }
                     ],
-                    "Forfai Ziada": {
-                        "Ziada 1jr": [
-                            {
-                                "price": "500F",
-                                "min": "3500Bonus",
-                                "sms": "SMS",
-                                "data": "",
-                                "validity": "1jr",
-                                "code": "*800*6*1*(1 ou 2)*code#"
-                            }
-                        ],
-                        "Ziada 2jrs": [
-                            {
-                                "price": "1000F",
-                                "min": "7000Bonus",
-                                "sms": "SMS",
-                                "data": "",
-                                "validity": "2jr",
-                                "code": "*800*6*2*(1 ou 2)*code#"
-                            }
-                        ],
-                        "Ziada 7jrs": [
-                            {
-                                "price": "2000F",
-                                "min": "10000Bonus",
-                                "sms": "SMS",
-                                "data": "",
-                                "validity": "7jr",
-                                "code": "*800*6*3*(1 ou 2)*code#"
-                            }
-                        ],
-                        "Ziada 15jrs": [
-                            {
-                                "price": "3000F",
-                                "min": "15000Bonus",
-                                "sms": "SMS",
-                                "data": "",
-                                "validity": "15jr",
-                                "code": "*800*6*4*(1 ou 2)*code#"
-                            }
-                        ],
-                        "Ziada 30jrs": [
-                            {
-                                "price": "5000F",
-                                "min": "25000Bonus",
-                                "sms": "SMS",
-                                "data": "",
-                                "validity": "30jr",
-                                "code": "*800*6*5*(1 ou 2)*code#"
-                            }
-                        ]
-                    },
+                    "Forfai Ziada": [
+                        {
+                            "price": "500F",
+                            "min": "3500Bonus",
+                            "sms": "SMS",
+                            "data": "",
+                            "validity": "1jr",
+                            "code": "*800*6*1*(1 ou 2)*code#"
+                        },
+                        {
+                            "price": "1000F",
+                            "min": "7000Bonus",
+                            "sms": "SMS",
+                            "data": "",
+                            "validity": "2jr",
+                            "code": "*800*6*2*(1 ou 2)*code#"
+                        },
+                        {
+                            "price": "2000F",
+                            "min": "10000Bonus",
+                            "sms": "SMS",
+                            "data": "",
+                            "validity": "7jr",
+                            "code": "*800*6*3*(1 ou 2)*code#"
+                        },
+                        {
+                            "price": "3000F",
+                            "min": "15000Bonus",
+                            "sms": "SMS",
+                            "data": "",
+                            "validity": "15jr",
+                            "code": "*800*6*4*(1 ou 2)*code#"
+                        },
+                        {
+                            "price": "5000F",
+                            "min": "25000Bonus",
+                            "sms": "SMS",
+                            "data": "",
+                            "validity": "30jr",
+                            "code": "*800*6*5*(1 ou 2)*code#"
+                        }
+                    ],
                     "Paiement": {
                         "SNE": {
-                            "Paiement": [
-                                {
-                                    "price": "",
-                                    "min": "",
-                                    "sms": "",
-                                    "data": "",
-                                    "validity": "",
-                                    "code": "*800*6*1*1*num_capteurSNE*montant#"
-                                }
-                            ],
-                            "Rapport": [
-                                {
-                                    "price": "",
-                                    "min": "",
-                                    "sms": "",
-                                    "data": "",
-                                    "validity": "",
-                                    "code": "*800*6*1*2*num_capteurSNE*code#"
-                                }
-                            ]
-                        },
-                        "Canal+": [
-                            {
-                                "Reabonnement": {
-                                    "SELECTION Carte": [
-                                        {
-                                            "price": "",
-                                            "min": "",
-                                            "sms": "",
-                                            "data": "",
-                                            "validity": "",
-                                            "code": "*800*6*2*1*num_carte*montant#"
-                                        }
-                                    ],
-                                    "Saisie N carte": [
-                                        {
-                                            "price": "",
-                                            "min": "",
-                                            "sms": "",
-                                            "data": "",
-                                            "validity": "",
-                                            "code": "*800*6*2*1*num_carte*montant#"
-                                        }
-                                    ]
-                                }
+                            "Paiement": {
+                                "price": "",
+                                "min": "",
+                                "sms": "",
+                                "data": "",
+                                "validity": "",
+                                "code": "*800*6*1*1*num_capteurSNE*montant#"
                             },
-                            {
-                                "Changement de formule": {
-                                    "price": "",
-                                    "min": "",
-                                    "sms": "",
-                                    "data": "",
-                                    "validity": "",
-                                    "code": "*800*6*2*2*num_capteurSNE*code#"
-                                },
-                                "Memoriser votre carte": {
-                                    "price": "",
-                                    "min": "",
-                                    "sms": "",
-                                    "data": "",
-                                    "validity": "",
-                                    "code": "*800*6*2*3*num_carte*montant*code#"
-                                },
-                                "Regularisation impayes": {
-                                    "price": "",
-                                    "min": "",
-                                    "sms": "",
-                                    "data": "",
-                                    "validity": "",
-                                    "code": "*800*6*2*4#"
-                                },
-                                "Historique des paiements": [
-                                    {
-                                        "price": "",
-                                        "min": "",
-                                        "sms": "",
-                                        "data": "",
-                                        "validity": "",
-                                        "code": "*800*6*2*5#"
-                                    }
-                                ]
+                            "Rapport": {
+                                "price": "",
+                                "min": "",
+                                "sms": "",
+                                "data": "",
+                                "validity": "",
+                                "code": "*800*6*1*2*num_capteurSNE*code#"
                             }
-                        ],
+                        },
+                        "Canal+": {
+                            "Reabonnement": {
+                                "price": "",
+                                "min": "",
+                                "sms": "",
+                                "data": "",
+                                "validity": "",
+                                "code": "*800*6*2*1*num_carte*montant#"
+                            },
+                            "Changement de formule": {
+                                "price": "",
+                                "min": "",
+                                "sms": "",
+                                "data": "",
+                                "validity": "",
+                                "code": "*800*6*2*2*num_capteurSNE*code#"
+                            },
+                            "Memoriser votre carte": {
+                                "price": "",
+                                "min": "",
+                                "sms": "",
+                                "data": "",
+                                "validity": "",
+                                "code": "*800*6*2*3*num_carte*montant*code#"
+                            },
+                            "Regularisation impayes": {
+                                "price": "",
+                                "min": "",
+                                "sms": "",
+                                "data": "",
+                                "validity": "",
+                                "code": "*800*6*2*4#"
+                            },
+                            "Historique des paiements": {
+                                "price": "",
+                                "min": "",
+                                "sms": "",
+                                "data": "",
+                                "validity": "",
+                                "code": "*800*6*2*5#"
+                            }
+                        },
                         "Bien et Service": [
                             {
                                 "price": "",
@@ -1537,6 +1453,15 @@
                         "validity": "",
                         "code": "*800*7#"
                     },
+                    
+
+
+
+
+
+
+
+                    
                     "GIMACPAY": {
                         "Transfert": {
                             "Tranfert Local": {
