@@ -919,61 +919,26 @@
             ],
             "Mon Compte": {
                 "Solde": {
-                    "price": "",
-                    "min": "",
-                    "sms": "",
-                    "data": "",
-                    "validity": "",
                     "code": "*111*1*1#"
                 },
                 "compte bonus": {
-                    "price": "",
-                    "min": "",
-                    "sms": "",
-                    "data": "",
-                    "validity": "",
                     "code": "*111*1*2#"
                 },
                 "Mon numéro": {
-                    "price": "",
-                    "min": "",
-                    "sms": "",
-                    "data": "",
-                    "validity": "",
                     "code": "*111*1*3#"
                 },
                 "Mon solde moov money": {
-                    "price": "",
-                    "min": "",
-                    "sms": "",
-                    "data": "",
-                    "validity": "",
                     "code": "*111*1*5*code#"
                 }
             },
             "Moov money": {
                 "Envoi argent": {
-                    "price": "",
-                    "min": "",
-                    "sms": "",
-                    "data": "",
-                    "validity": "",
                     "code": "*800*1*num_benificiaire*montant*code#"
                 },
                 "Achat credit(100% Bonus)": {
-                    "price": "",
-                    "min": "",
-                    "sms": "",
-                    "data": "",
-                    "validity": "",
                     "code": "*800*2*(1 ou 2)*montant*code#"
                 },
                 "Retrait argent": {
-                    "price": "",
-                    "min": "",
-                    "sms": "",
-                    "data": "",
-                    "validity": "",
                     "code": "*800*3*num_agent*montant*code#"
                 },
                 "Achat kattir": {
@@ -1376,33 +1341,26 @@
                     "Paiement": {
                         "SNE": {
                             "Paiement": {
-                                
                                 "code": "*800*6*1*1*num_capteurSNE*montant#"
                             },
                             "Rapport": {
-                               
                                 "code": "*800*6*1*2*num_capteurSNE*code#"
                             }
                         },
                         "Canal+": {
                             "Reabonnement": {
-                               
                                 "code": "*800*6*2*1*num_carte*montant#"
                             },
                             "Changement de formule": {
-                              
                                 "code": "*800*6*2*2*num_capteurSNE*code#"
                             },
                             "Memoriser votre carte": {
-                               
                                 "code": "*800*6*2*3*num_carte*montant*code#"
                             },
                             "Regularisation impayes": {
-                               
                                 "code": "*800*6*2*4#"
                             },
                             "Historique des paiements": {
-                               
                                 "code": "*800*6*2*5#"
                             }
                         },
@@ -1413,24 +1371,13 @@
                         ]
                     },
                     "Aide": {
-                        
                         "code": "*800*7#"
                     },
-                    
-
-
-
-
-
-
-
-                    
                     "GIMACPAY": {
                         "Transfert": {
                             "Tranfert Local": {
                                 "Airtel Money": [
                                     {
-                                        
                                         "code": "*800*9*1*1*1*num_airtemoney*montant*code#"
                                     }
                                 ]
@@ -1439,55 +1386,46 @@
                                 "Cameroun": {
                                     "BICEC(BIPAY)": [
                                         {
-                                           
                                             "code": "*800*9*1*2*1*1*num_compte_destinataire*montant*code#"
                                         }
                                     ],
                                     "CBC(Speeddoh)": [
                                         {
-                                            
                                             "code": "*800*9*1*2*1*2*num_compte_destinataire*montant*code#"
                                         }
                                     ],
                                     "CCA Bank (Moving)": [
                                         {
-                                           
                                             "code": "*800*9*1*2*1*3*num_compte_destinataire*montant*code#"
                                         }
                                     ],
                                     "Express Union Mobile": [
                                         {
-                                           
                                             "code": "*800*9*1*2*1*4*num_compte_destinataire*montant*code#"
                                         }
                                     ],
                                     "La Regional(Ananas Money)": [
                                         {
-                                           
                                             "code": "*800*9*1*2*1*5*num_compte_destinataire*montant*code#"
                                         }
                                     ],
                                     "MTN Mobile Money": [
                                         {
-                                           
                                             "code": "*800*9*1*2*1*6*num_compte_destinataire*montant*code#"
                                         }
                                     ],
                                     "Orange Money": [
                                         {
-                                           
                                             "code": "*800*9*1*2*1*7*num_compte_destinataire*montant*code#"
                                         }
                                     ],
                                     "YUB(SG)": [
                                         {
-                                           
                                             "code": "*800*9*1*2*1*8*num_compte_destinataire*montant*code#"
                                         }
                                     ],
                                     "UBC": [
                                         {
-                                           
                                             "code": "*800*9*1*2*1*9*num_compte_destinataire*montant*code#"
                                         }
                                     ]
@@ -1500,19 +1438,16 @@
                                     ],
                                     "MTN MoMo": [
                                         {
-                                           
                                             "code": "*800*9*1*2*2*2*num_compte_destinataire*montant*code#"
                                         }
                                     ],
                                     "BCI Congo": [
                                         {
-                                            
                                             "code": "*800*9*1*2*2*3*num_compte_destinataire*montant*code#"
                                         }
                                     ],
                                     "BGFIBANK Congo": [
                                         {
-                                           
                                             "code": "*800*9*1*2*2*4*num_compte_destinataire*montant*code#"
                                         }
                                     ]
@@ -1520,7 +1455,6 @@
                                 "Centrafrique": {
                                     "Orange Money": [
                                         {
-                                           
                                             "code": "*800*9*1*2*4*1*num_compte_destinataire*montant*code#"
                                         }
                                     ]
@@ -1533,13 +1467,11 @@
                                     ],
                                     "Airtel Money": [
                                         {
-                                           
                                             "code": "*800*9*1*2*5*2*num_compte_destinataire*montant*code#"
                                         }
                                     ],
                                     "BGFIBank": [
                                         {
-                                            
                                             "code": "*800*9*1*2*5*3*num_compte_destinataire*montant*code#"
                                         }
                                     ]
@@ -1550,7 +1482,6 @@
                             "Paiement Local": {
                                 "Airtel Money": [
                                     {
-                                       
                                         "code": "*800*9*2*1*1*num_marchand_airtelmoney*montant*code#"
                                     }
                                 ]
@@ -1559,59 +1490,46 @@
                                 "Cameroun": {
                                     "BICEC(BYPAY)": [
                                         {
-                                            "price": "",
-                                            "min": "",
-                                            "sms": "",
-                                            "data": "",
-                                            "validity": "",
                                             "code": "*800*9*2*2*1*1*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "CBC(Speedoh)": [
                                         {
-                                          
                                             "code": "*800*9*2*2*1*2*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "CCA Bank(Moving)": [
                                         {
-                                           
                                             "code": "*800*9*2*2*1*3*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "Express Union Mobile": [
                                         {
-                                          
                                             "code": "*800*9*2*2*1*4*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "La Regionale (Ananas Money)": [
                                         {
-                                           
                                             "code": "*800*9*2*2*1*5*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "MTN Mobile Money": [
                                         {
-                                          
                                             "code": "*800*9*2*2*1*6*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "Orange Money": [
                                         {
-                                           
                                             "code": "*800*9*2*2*1*7*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "YUP(SG)": [
                                         {
-                                           
                                             "code": "*800*9*2*2*1*8*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "UBC": [
                                         {
-                                           
                                             "code": "*800*9*2*2*1*9*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ]
@@ -1619,25 +1537,21 @@
                                 "Congo": {
                                     "Airtel Congo": [
                                         {
-                                          
                                             "code": "*800*9*2*2*2*1*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "MTN MoMo": [
                                         {
-                                            
                                             "code": "*800*9*2*2*2*2*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "BCi Congo": [
                                         {
-                                           
                                             "code": "*800*9*2*2*2*3*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "BGFI Congo": [
                                         {
-                                           
                                             "code": "*800*9*2*2*2*1*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ]
@@ -1645,7 +1559,6 @@
                                 "Centrafrique": {
                                     "Orange Money": [
                                         {
-                                           
                                             "code": "*800*9*2*2*4*1*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ]
@@ -1653,19 +1566,16 @@
                                 "Gabon": {
                                     "Moov Africa": [
                                         {
-                                           
                                             "code": "*800*9*2*2*5*1*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "Airtel Money": [
                                         {
-                                           
                                             "code": "*800*9*2*2*5*2*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ],
                                     "BGFIBank": [
                                         {
-                                           
                                             "code": "*800*9*2*2*5*3*num_marchand_airtelmoney*montant*code#"
                                         }
                                     ]
@@ -1674,13 +1584,11 @@
                             "Retrait GAB": {
                                 "Retrait Pour Soi": [
                                     {
-                                       
                                         "code": "*800*9*3*1*montant*code#"
                                     }
                                 ],
                                 "Retrait pour les autres": [
                                     {
-                                       
                                         "code": "*800*9*3*2*montant*code#"
                                     }
                                 ]
