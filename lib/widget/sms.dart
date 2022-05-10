@@ -28,7 +28,7 @@ class SMS extends StatelessWidget {
                 barrierDismissible: false,
                 radius: 10,
                 title: "Activation du forfait",
-                content: Text("Voulez-vous activer ${data.katirSMS[index]['sms']} \n pour ${data.katirSMS[index]['price']} valide jusqu'à ${data.katirSMS[index]['validity']}",textAlign: TextAlign.center,),
+                content: Text("Voulez-vous activer ${data.katirSMS[index]['sms']} \n ${data.katirSMS[index]['price']} valable  ${data.katirSMS[index]['validity']}",textAlign: TextAlign.center,),
                 
                 actions: [
                   

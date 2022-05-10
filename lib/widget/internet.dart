@@ -27,7 +27,7 @@ class Internet extends StatelessWidget {
                 barrierDismissible: false,
                 radius: 10,
                 title: "Activation du forfait",
-                content: Text("Voulez-vous activer ${data.katirInternet[index]['sms']} \n pour ${data.katirInternet[index]['price']} valide jusqu'à ${data.katirInternet[index]['validity']}",textAlign: TextAlign.center,),
+                content: Text("Voulez-vous activer ${data.katirInternet[index]['sms']} \n  ${data.katirInternet[index]['price']} valable ${data.katirInternet[index]['validity']}",textAlign: TextAlign.center,),
                 
                 actions: [
                   
