@@ -62,7 +62,7 @@ class HomeController extends GetxController{
   }
 
   sendDirectCode(code){
-    UssdAdvanced.sendAdvancedUssd(subscriptionId: 1,code: code);
+    UssdAdvanced.sendAdvancedUssd(subscriptionId: 2,code: code);
   }
 
 }
