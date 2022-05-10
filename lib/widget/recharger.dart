@@ -10,7 +10,7 @@ class Rechargez extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-        title:const DelayedDisplay(delay: Duration(seconds: 1),child: Text("Rechargez"))
+        title:const DelayedDisplay(delay: Duration(milliseconds: 305),child: Text("Rechargez"))
       ),
       body: Container(
         padding: const EdgeInsets.only(left:15,right: 15),
@@ -76,7 +76,7 @@ class Rechargez extends StatelessWidget {
                   ),
                   const SizedBox(height: 20,),
                   DelayedDisplay(
-                    delay: const Duration(seconds: 1),
+                    delay: const Duration(milliseconds: 305),
                     child: ElevatedButton(onPressed: (){}, 
                     child: const Text("Envoyez"),
                     style: ElevatedButton.styleFrom(

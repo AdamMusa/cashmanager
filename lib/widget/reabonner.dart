@@ -11,7 +11,7 @@ class Reabonner extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.indigo,
         title:const DelayedDisplay(
-          delay: Duration(seconds: 1),
+          delay: Duration(milliseconds: 305),
           child: Text("Reabonner"))
       ),
       body: Container(
@@ -81,7 +81,7 @@ class Reabonner extends StatelessWidget {
                   ),
                   const SizedBox(height: 20,),
                   DelayedDisplay(
-                    delay: const Duration(seconds: 1),
+                    delay: const Duration(milliseconds: 305),
                     child: ElevatedButton(onPressed: (){}, 
                     child: const Text("Envoyez"),
                     style: ElevatedButton.styleFrom(
