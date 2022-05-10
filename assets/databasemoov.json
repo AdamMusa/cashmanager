@@ -210,6 +210,14 @@
                 "code": "*111*4*1*1#"
             },
             {
+                "price": "550F",
+                "min": "",
+                "sms": "",
+                "data": "1GB",
+                "validity": "24H",
+                "code": "*111*4*4*1#"
+            },
+            {
                 "price": "250F",
                 "min": "",
                 "sms": "",
@@ -226,19 +234,36 @@
                 "code": "*111*4*3*1#"
             },
             {
-                "price": "550F",
+                "price": "750F",
+                "min": "",
+                "sms": "",
+                "data": "1.5GB",
+                "validity": "1jr",
+                "code": "*111*4*7*10*1#"
+            },
+            {
+                "price": "15000F",
+                "min": "",
+                "sms": "",
+                "data": "1.5GB",
+                "validity": "1jr",
+                "code": "*111*4*7*11*1#"
+            },
+            {
+                "price": "1500F",
                 "min": "",
                 "sms": "",
                 "data": "1GB",
-                "validity": "24H",
-                "code": "*111*4*4*1#"
+                "validity": "2jrs",
+                "code": "*111*4*7*11*1#"
             },
+           
             {
                 "price": "1000F",
                 "min": "",
                 "sms": "",
                 "data": "2GB",
-                "validity": "48H",
+                "validity": "2jrs",
                 "code": "*111*4*5*1#"
             },
             {
@@ -321,30 +346,7 @@
                 "validity": "30jrs",
                 "code": "*111*4*7*9*1#"
             },
-            {
-                "price": "750F",
-                "min": "",
-                "sms": "",
-                "data": "1.5GB",
-                "validity": "1jr",
-                "code": "*111*4*7*10*1#"
-            },
-            {
-                "price": "15000F",
-                "min": "",
-                "sms": "",
-                "data": "1.5GB",
-                "validity": "1jr",
-                "code": "*111*4*7*11*1#"
-            },
-            {
-                "price": "1500F",
-                "min": "",
-                "sms": "",
-                "data": "1GB",
-                "validity": "2jrs",
-                "code": "*111*4*7*11*1#"
-            },
+          
             {
                 "price": "15000F",
                 "min": "",
