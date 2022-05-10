@@ -4,8 +4,8 @@ import 'package:cashmanager/widget/appel.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-class ChoiceOptionAppel extends StatelessWidget {
-  ChoiceOptionAppel({ Key? key }) : super(key: key);
+class ChoiceOptionInternet extends StatelessWidget {
+  ChoiceOptionInternet({ Key? key }) : super(key: key);
   final db = Get.find<DataBase>();
   Widget itemOption(BuildContext context,{VoidCallback? onTap,String? text}){
     return GestureDetector(

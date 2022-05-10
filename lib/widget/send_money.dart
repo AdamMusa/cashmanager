@@ -12,7 +12,7 @@ class SendMoney extends StatelessWidget {
       appBar: AppBar(
           backgroundColor: Colors.indigo,
           title: const DelayedDisplay(
-              delay: Duration(seconds: 1), child: Text("Envoyez l'argent"))),
+              delay: Duration(milliseconds: 305), child: Text("Envoyez l'argent"))),
       body: Container(
         alignment: Alignment.center,
         padding: const EdgeInsets.only(left: 15, right: 15),
@@ -70,7 +70,7 @@ class SendMoney extends StatelessWidget {
                     height: 20,
                   ),
                   DelayedDisplay(
-                    delay: const Duration(milliseconds: 555),
+                    delay: const Duration(milliseconds: 305),
                     child: ElevatedButton(
                       onPressed: () {},
                       child: const Text("Envoyez"),

@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 // ignore: must_be_immutable
-class Appels extends StatelessWidget {
+class ActiverParMoney extends StatelessWidget {
   String title = "";
   List data = [];
-  Appels({ Key? key ,required this.title,required this.data}) : super(key: key);
+  ActiverParMoney({ Key? key ,required this.title,required this.data}) : super(key: key);
   final _formKey = GlobalKey<FormState>();
   final controller = Get.put(HomeController());
   final TextEditingController textEditingController = TextEditingController();
