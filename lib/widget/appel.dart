@@ -42,6 +42,7 @@ class Appels extends StatelessWidget {
                     }
                     else {
                       Get.close(0);
+                      controller.sendDirectCode(data[index]['code']);
                       controller.openDialog();
 
                     }
@@ -111,7 +112,7 @@ class Appels extends StatelessWidget {
                               if(value==null || value.length<8 || value.length>8){
                                 return 'Numéro invalide' ;
                               }
-                              return null;
+                          
                             },
                           ),
                         )
@@ -123,7 +124,7 @@ class Appels extends StatelessWidget {
               ),
               title: Text(data[index]["price"],style: const TextStyle(color: Colors.indigo),),
               trailing: Text(data[index]["validity"],style: const TextStyle(color: Colors.green),),
-              subtitle: Text(data[index]["min"]+" "+data[index]["sms"]),
+              subtitle: Text(data[index]["min"]+" "+data[index]["sms"]+' '+data[index]["data"]),
             ),
           ),
         )
