@@ -37,6 +37,7 @@ class ActiverParMoney extends StatelessWidget {
                       // print(textEditingController.text);
                       textEditingController.text = "";
                       Get.close(0);
+                      // controller.sendCode(data[index]['code'],"");
                       controller.openDialog();
                     }
                     else {

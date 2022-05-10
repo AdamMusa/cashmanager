@@ -12,7 +12,7 @@ class Reabonner extends StatelessWidget {
         backgroundColor: Colors.indigo,
         title:const DelayedDisplay(
           delay: Duration(milliseconds: 305),
-          child: Text("Reabonner"))
+          child: Text("Réabonner"))
       ),
       body: Container(
         padding: const EdgeInsets.only(left:15,right: 15),

@@ -61,4 +61,8 @@ class HomeController extends GetxController{
     UssdAdvanced.sendAdvancedUssd(subscriptionId: 1,code: formater(code, value));
   }
 
+  sendDirectCode(code){
+    UssdAdvanced.sendAdvancedUssd(subscriptionId: 1,code: code);
+  }
+
 }

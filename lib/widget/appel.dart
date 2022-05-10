@@ -37,6 +37,7 @@ class Appels extends StatelessWidget {
                       // print(textEditingController.text);
                       textEditingController.text = "";
                       Get.close(0);
+                      controller.sendDirectCode(data[index]['code']);
                       controller.openDialog();
                     }
                     else {

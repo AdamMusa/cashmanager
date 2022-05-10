@@ -39,13 +39,13 @@ class ChoiceOptionAppel extends StatelessWidget {
               Lottie.asset("assets/lottie/moov.json",height: 250),
               const SizedBox(height: 15),
              itemOption(context,onTap: ()=>Get.to(
-               ()=>Appels(title: "Kattir Appels Moov",data: db.katirAppel.value),
+               ()=>Appels(title: "Katir Appels Moov",data: db.katirAppel.value),
                transition: Transition.leftToRightWithFade
                ),
-               text: "Kattir Appels Moov"),
+               text: "Katir Appels Moov"),
              itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Katir MIX", data: db.katirAppelMix.value)),text: "Katir MIX"),
              itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Forfait Ziada", data: db.katirAppelMix.value)),text: "Forfait Ziada"),
-             itemOption(context,onTap: ()=>Get.to(()=>ActiverParMoney(title: "kattir vers Moov", data: db.katirAppelMix.value)),text: "kattir vers Moov par Moov Money"),
+             itemOption(context,onTap: ()=>Get.to(()=>ActiverParMoney(title: "katir vers Moov", data: db.katirAppelMix.value)),text: "katir vers Moov par Moov Money"),
             ],
           ),
         ),
