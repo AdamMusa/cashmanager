@@ -934,7 +934,7 @@
             "Envoi argent": {
                 "code": "*800*1*num_benificiaire*montant*code#"
             },
-            "Achat credit(100% Bonus)": {
+            "Achat credit": {
                 "code": "*800*2*(1 ou 2)*montant*code#"
             },
             "Retrait argent": {

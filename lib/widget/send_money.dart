@@ -70,7 +70,7 @@ class SendMoney extends StatelessWidget {
                     height: 20,
                   ),
                   DelayedDisplay(
-                    delay: const Duration(seconds: 1),
+                    delay: const Duration(milliseconds: 555),
                     child: ElevatedButton(
                       onPressed: () {},
                       child: const Text("Envoyez"),

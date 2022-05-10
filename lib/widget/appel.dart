@@ -44,8 +44,6 @@ class Appels extends StatelessWidget {
                       controller.openDialog();
 
                     }
-                    return ;
-                    
 
                   }, child: const Text("ACTIVEZ"),
                   
@@ -55,70 +53,14 @@ class Appels extends StatelessWidget {
                   )
                 ],
                
-                content: Obx(
-                  ()=> Column(
+                content:Column(
                     children: [
                       Text("Voulez-vous activer ${data[index]["min"]+" "+data[index]["sms"]+ " "+"valable " +data[index]["validity"]}",textAlign: TextAlign.center,),
                       const SizedBox(height: 10,),
-                      CheckboxListTile(
-                        shape: const StadiumBorder(
-                          side: BorderSide(
-                            color: Colors.indigo
-                          )
-                        ),
-                        title: const Text("Activer pour un autre"),
-                        value: controller.autre.value, onChanged: (bool? value)=>controller.autre.value=value!
-                      ),
-                      const SizedBox(height: 15,),
-                      Visibility(
-                        visible: controller.autre.value,
-                        child:Form(
-                          key: _formKey,
-                          autovalidateMode: AutovalidateMode.always,
-                          child: TextFormField(
-                            controller: textEditingController,
-                            keyboardType: TextInputType.number,
-                            keyboardAppearance: Brightness.dark,
-                            decoration: InputDecoration(
-                              focusedBorder: OutlineInputBorder(
-                                 borderRadius: BorderRadius.circular(40),
-                                 borderSide: const BorderSide(
-                                   color: Colors.indigo
-                                 )
-                              ),
-                              errorBorder: OutlineInputBorder(
-                                 borderRadius: BorderRadius.circular(20),
-                                 borderSide: const BorderSide(
-                                   color: Colors.red
-                                 )
-                              ),
-                              border: OutlineInputBorder(
-                                
-                                borderRadius: BorderRadius.circular(20),
-                        
-                              )
-                            ),
-                            
-                            onSaved: (value){
-                              if(value!.length==8){
-                                // print(value);
-                                value = "";
-                                
-                              }
-                            },
-                            validator: (value){
-                              if(value==null || value.length<8 || value.length>8){
-                                return 'Numéro invalide' ;
-                              }
-                              return null;
-                            },
-                          ),
-                        )
-                          
-                        )
+                      
                     ],
                   ),
-                )
+                
               ),
               title: Text(data[index]["price"],style: const TextStyle(color: Colors.indigo),),
               trailing: Text(data[index]["validity"],style: const TextStyle(color: Colors.green),),

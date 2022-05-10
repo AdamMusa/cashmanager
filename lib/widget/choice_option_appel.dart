@@ -43,7 +43,7 @@ class ChoiceOptionAppel extends StatelessWidget {
                ),
                text: "Kattir Appels Moov"),
              itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Katir MIX", data: db.katirAppelMix.value)),text: "Katir MIX"),
-             itemOption(context,onTap: (){},text: "Go Night"),
+             itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Katir MIX", data: db.katirAppelMix.value)),text: "Forfait Ziada"),
             ],
           ),
         ),
