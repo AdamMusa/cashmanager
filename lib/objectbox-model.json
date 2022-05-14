@@ -1,0 +1,72 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:1876178407854199216",
+      "lastPropertyId": "9:7923388940219569704",
+      "name": "LocalDatabase",
+      "properties": [
+        {
+          "id": "1:2413686775040707788",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8459417054313925698",
+          "name": "price",
+          "type": 9
+        },
+        {
+          "id": "3:1915781750612668186",
+          "name": "min",
+          "type": 9
+        },
+        {
+          "id": "4:7846873825149354999",
+          "name": "sms",
+          "type": 9
+        },
+        {
+          "id": "5:7198403639943123604",
+          "name": "data",
+          "type": 9
+        },
+        {
+          "id": "6:4406189722895520575",
+          "name": "validity",
+          "type": 9
+        },
+        {
+          "id": "7:4348052288374298704",
+          "name": "code",
+          "type": 9
+        },
+        {
+          "id": "8:89854657401605199",
+          "name": "titre",
+          "type": 9
+        },
+        {
+          "id": "9:7923388940219569704",
+          "name": "description",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "1:1876178407854199216",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
