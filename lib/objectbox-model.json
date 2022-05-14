@@ -5,7 +5,7 @@
   "entities": [
     {
       "id": "1:1876178407854199216",
-      "lastPropertyId": "9:7923388940219569704",
+      "lastPropertyId": "10:3413588607018860376",
       "name": "LocalDatabase",
       "properties": [
         {
@@ -53,6 +53,11 @@
           "id": "9:7923388940219569704",
           "name": "description",
           "type": 9
+        },
+        {
+          "id": "10:3413588607018860376",
+          "name": "pending",
+          "type": 1
         }
       ],
       "relations": []

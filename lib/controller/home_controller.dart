@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:ussd_advanced/ussd_advanced.dart';
-
+import 'package:cashmanager/objectbox.g.dart';
 import '../database/database.dart';
+import '../database/local_database.dart';
 
 class HomeController extends GetxController{
    var dropdwon = ["Cameroun","Congo","Centrafrique","Gabon","Guinée Equatorial"].obs;
@@ -17,15 +18,25 @@ class HomeController extends GetxController{
    var autre = false.obs;
    var number = "".obs;
    var validate = false.obs;
-
    final db = Get.put(DataBase());
+
+   
+   get box=>getBox();
    switcher(value){
      index.value = value;
    }
   
+  getBox(){
+    final store = awaitStore();
+    final box = store.box<LocalDatabase>();
+    return  box;
+  }
+  awaitStore()async{
+    return await openStore();
+  }
 
   @override
-  void onInit() {
+  void onInit(){
     super.onInit();
     db.readDataFromDatabase();
   }

@@ -12,8 +12,9 @@ class LocalDatabase {
   late String code;
   late String titre;
   late String description;
+  bool? pending = false;
 
-  LocalDatabase({this.id = 0, required this.price, required this.min,required this.sms,required this.data , required this.validity,required this.code,required this.titre,required this.description});
+  LocalDatabase({this.id = 0, required this.price, required this.min,required this.sms,required this.data , required this.validity,required this.code,required this.titre,required this.description,this.pending});
 
   
 }
