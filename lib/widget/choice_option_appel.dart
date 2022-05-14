@@ -38,14 +38,15 @@ class ChoiceOptionAppel extends StatelessWidget {
             children: [
               Lottie.asset("assets/lottie/moov.json",height: 250),
               const SizedBox(height: 15),
+             itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Katir Mix", data: db.katirAppelMix.value)),text: "Katir MIX"),
+             itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Forfait Ziada", data: db.forfaitZiada.value)),text: "Forfait Ziada"),
              itemOption(context,onTap: ()=>Get.to(
                ()=>Appels(title: "Katir Appels Moov",data: db.katirAppel.value),
                transition: Transition.leftToRightWithFade
                ),
                text: "Katir Appels Moov"),
-             itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Katir MIX", data: db.katirAppelMix.value)),text: "Katir MIX"),
-             itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Forfait Ziada", data: db.forfaitZiada.value)),text: "Forfait Ziada"),
              itemOption(context,onTap: ()=>Get.to(()=>ActiverParMoney(title: "katir vers Moov", data: db.katirParMoovMoney.value)),text: "katir vers Moov par Moov Money"),
+             itemOption(context,onTap: ()=>Get.to(()=>ActiverParMoney(title: "katir International", data: db.katirInterParMoovMoney.value)),text: "katir International par Moov Money"),
             ],
           ),
         ),

@@ -124,7 +124,7 @@ class Appels extends StatelessWidget {
               ),
               title: Text(data[index]["price"],style: const TextStyle(color: Colors.indigo),),
               trailing: Text(data[index]["validity"],style: const TextStyle(color: Colors.green),),
-              subtitle: Text(data[index]["min"]+" "+data[index]["sms"]+' '+data[index]["data"]),
+              subtitle: Text(data[index]["min"]+" "+data[index]["sms"]+" "+data[index]["data"]),
             ),
           ),
         )

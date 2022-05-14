@@ -1,9 +1,9 @@
 import 'package:cashmanager/widget/choice_option_appel.dart';
-import 'package:cashmanager/widget/internet.dart';
+import 'package:cashmanager/widget/choice_option_internet.dart';
+import 'package:cashmanager/widget/choice_option_sms.dart';
 import 'package:cashmanager/widget/reabonner.dart';
 import 'package:cashmanager/widget/recharger.dart';
 import 'package:cashmanager/widget/send_money.dart';
-import 'package:cashmanager/widget/sms.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
@@ -48,11 +48,11 @@ class Index extends StatelessWidget {
             lottiePath: "assets/lottie/moov.json",
             text: "Activez les Appels"),
         customItem(
-            onTap: ()=>Get.to(()=>SMS()),
+            onTap: ()=>Get.to(()=>ChoiceOptionSMS()),
             lottiePath: "assets/lottie/moov_msg.json",
             text: "Activez les SMS"),
         customItem(
-            onTap: ()=>Get.to(()=>Internet()),
+            onTap: ()=>Get.to(()=>ChoiceOptionInternet()),
             lottiePath: "assets/lottie/moov_internet.json",
             text: "Réchargez les Megas"),
         customItem(
