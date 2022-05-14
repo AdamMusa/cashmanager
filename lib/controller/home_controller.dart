@@ -20,7 +20,7 @@ class HomeController extends GetxController{
    var validate = false.obs;
    final db = Get.put(DataBase());
 
-   
+
    get box=>getBox();
    switcher(value){
      index.value = value;
@@ -31,7 +31,7 @@ class HomeController extends GetxController{
     final box = store.box<LocalDatabase>();
     return  box;
   }
-  awaitStore()async{
+  awaitStore() async{
     return await openStore();
   }
 
