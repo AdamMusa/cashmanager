@@ -1,6 +1,5 @@
 import 'package:cashmanager/database/database.dart';
-import 'package:cashmanager/widget/activer_par_money.dart';
-import 'package:cashmanager/widget/appel.dart';
+import 'package:cashmanager/widget/helper_data.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
@@ -39,8 +38,8 @@ class ChoiceOptionInternet extends StatelessWidget {
               Lottie.asset("assets/lottie/moov_internet.json",height: 250),
               const SizedBox(height: 15),
             
-             itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Katir Internet", data: db.katirInternet.value)),text: "Katir Internet"),
-             itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Katir Internet par mooney money", data: db.katirInternetParMoovMoney.value)),text: "Katir Internet par mooney money"),
+             itemOption(context,onTap: ()=>Get.to(()=>HelperData(title: "Katir Internet", data: db.katirInternet.value)),text: "Katir Internet"),
+             itemOption(context,onTap: ()=>Get.to(()=>HelperData(title: "Katir Internet par mooney money", data: db.katirInternetParMoovMoney.value)),text: "Katir Internet par mooney money"),
             ],
           ),
         ),
