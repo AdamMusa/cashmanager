@@ -1,22 +1,23 @@
 import 'package:cashmanager/controller/home_controller.dart';
+// import 'package:cashmanager/objectbox.g.dart';
 import 'package:cashmanager/widget/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 
-void main() async{
+void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   // await Future.delayed(const Duration(seconds: 3));
   FlutterNativeSplash.remove();
-  final controller = Get.put(HomeController());
-  final store = await controller.awaitStore();
+  Get.put(HomeController());
+  // final store = await openStore();
   runApp(
     GetMaterialApp(
     debugShowCheckedModeBanner: false,
     home: Home(),
   ));
 
-  store.close();
+  // store.close();
 
 }

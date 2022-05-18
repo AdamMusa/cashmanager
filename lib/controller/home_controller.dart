@@ -18,17 +18,19 @@ class HomeController extends GetxController{
    var autre = false.obs;
    var number = "".obs;
    var validate = false.obs;
+   var description = "".obs;
    final db = Get.put(DataBase());
 
 
-  get box=>getBox();
+  get box =>getBox();
    switcher(value){
      index.value = value;
    }
   
-  getBox(){
-    final store = awaitStore();
+  getBox()async{
+    final store = await awaitStore();
     final box = store.box<LocalDatabase>();
+    print(box.get());
     return  box;
   }
   awaitStore() async{

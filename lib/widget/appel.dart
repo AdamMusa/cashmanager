@@ -1,4 +1,5 @@
 import 'package:cashmanager/controller/home_controller.dart';
+import 'package:cashmanager/database/local_database.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -8,7 +9,7 @@ class Appels extends StatelessWidget {
   List data = [];
   Appels({ Key? key ,required this.title,required this.data}) : super(key: key);
   final _formKey = GlobalKey<FormState>();
-  final controller = Get.put(HomeController());
+  final controller = Get.find<HomeController>();
   final TextEditingController textEditingController = TextEditingController();
   @override
   Widget build(BuildContext context) {
@@ -42,9 +43,19 @@ class Appels extends StatelessWidget {
                     }
                     else {
                       Get.close(0);
-                      controller.sendDirectCode(data[index]['code']);
+                      // controller.sendDirectCode(data[index]['code']);
                       controller.openDialog();
-
+                      // controller.box.put(LocalDatabase(
+                      //   min: data[index]['min'],
+                      //   sms: data[index]['sms'],
+                      //   data: data[index]['data'],
+                      //   code: data[index]['code'],
+                      //   validity: data[index]['validity'],
+                      //   price: data[index]['price'],
+                      //   titre: title,
+                      //   description:controller.description.value ,
+                      // ));
+                      // debugPrint("Activez");
                     }
                     
                     

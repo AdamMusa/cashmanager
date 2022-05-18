@@ -1,3 +1,4 @@
+import 'package:cashmanager/controller/home_controller.dart';
 import 'package:cashmanager/database/database.dart';
 import 'package:cashmanager/widget/activer_par_money.dart';
 import 'package:cashmanager/widget/appel.dart';
@@ -6,8 +7,10 @@ import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 class ChoiceOptionAppel extends StatelessWidget {
   ChoiceOptionAppel({ Key? key }) : super(key: key);
+  final controller = Get.find<HomeController>();
   final db = Get.find<DataBase>();
   Widget itemOption(BuildContext context,{VoidCallback? onTap,String? text}){
+    controller.description.value = text??"";
     return GestureDetector(
       onTap: onTap,
       child: ClipRRect(
