@@ -1,9 +1,7 @@
-
 import 'package:cashmanager/objectbox.g.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:ussd_advanced/ussd_advanced.dart';
 import '../database/database.dart';
 import '../database/local_database.dart';
 
@@ -19,6 +17,10 @@ class HomeController extends GetxController{
    var number = "".obs;
    var validate = false.obs;
    var description = "".obs;
+   var password = "".obs;
+   var montant = "".obs;
+   var serie = "".obs;
+   var numero = "".obs;
    final db = Get.put(DataBase());
 
 
@@ -71,11 +73,14 @@ class HomeController extends GetxController{
     return newValue.replaceAll(RegExp(r'\(.*\)'), value);
   }
   sendCode(code,value){
-    UssdAdvanced.sendAdvancedUssd(subscriptionId: 1,code: formater(code, value));
+    print(formater(code, value));
+    // UssdAdvanced.sendAdvancedUssd(subscriptionId: 1,code: formater(code, value));
   }
 
   sendDirectCode(code){
-    UssdAdvanced.sendAdvancedUssd(subscriptionId: 2,code: code);
+    print(code);
+
+    // UssdAdvanced.sendAdvancedUssd(subscriptionId: 2,code: code);
   }
 
 }

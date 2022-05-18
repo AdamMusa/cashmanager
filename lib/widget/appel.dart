@@ -38,12 +38,12 @@ class Appels extends StatelessWidget {
                       // print(textEditingController.text);
                       textEditingController.text = "";
                       Get.close(0);
-                      controller.sendDirectCode(data[index]['code']);
+                      controller.sendCode(data[index]['code'],"95838351");
                       controller.openDialog();
                     }
                     else {
                       Get.close(0);
-                      // controller.sendDirectCode(data[index]['code']);
+                      controller.sendDirectCode(data[index]['code']);
                       controller.openDialog();
                       // controller.box.put(LocalDatabase(
                       //   min: data[index]['min'],

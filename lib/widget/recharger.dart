@@ -1,10 +1,12 @@
+import 'package:cashmanager/controller/home_controller.dart';
 import 'package:delayed_display/delayed_display.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 class Rechargez extends StatelessWidget {
   Rechargez({ Key? key }) : super(key: key);
   final _formKey = GlobalKey<FormState>();
-
+  final controller = Get.find<HomeController>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,6 +40,12 @@ class Rechargez extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20)
                       )
                     ),
+                    validator: (value){
+                      if(value!.length<11 || value.length>11){
+                        return "Numero du conteur invalide";
+                      }
+                      return controller.serie.value = value;
+                    },
                   ),
                   const SizedBox(height: 15,),
                   TextFormField(
@@ -55,6 +63,12 @@ class Rechargez extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20)
                       )
                     ),
+                    validator: (value){
+                      if(value!.length<4){
+                        return "imposible de recharger avec ce montant";
+                     }
+                     return controller.montant.value = value;
+                    },
                   ),
                   const SizedBox(height: 15,),
                   TextFormField(
@@ -73,6 +87,12 @@ class Rechargez extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20)
                       )
                     ),
+                    validator: (value){
+                      if(value!.length<4 || value.length>4){
+                        return "Le mot de passe doit etre 4 chiffre";
+                      }
+                      return controller.password.value = value;
+                    },
                   ),
                   const SizedBox(height: 20,),
                   DelayedDisplay(
