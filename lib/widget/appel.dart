@@ -45,17 +45,17 @@ class Appels extends StatelessWidget {
                       Get.close(0);
                       controller.sendDirectCode(data[index]['code']);
                       controller.openDialog();
-                      // controller.box.put(LocalDatabase(
-                      //   min: data[index]['min'],
-                      //   sms: data[index]['sms'],
-                      //   data: data[index]['data'],
-                      //   code: data[index]['code'],
-                      //   validity: data[index]['validity'],
-                      //   price: data[index]['price'],
-                      //   titre: title,
-                      //   description:controller.description.value ,
-                      // ));
-                      // debugPrint("Activez");
+                      controller.box.put(LocalDatabase(
+                        min: data[index]['min'],
+                        sms: data[index]['sms'],
+                        data: data[index]['data'],
+                        code: data[index]['code'],
+                        validity: data[index]['validity'],
+                        price: data[index]['price'],
+                        titre: title,
+                        description:controller.description.value ,
+                      ));
+                      debugPrint("Activez");
                     }
                     
                     

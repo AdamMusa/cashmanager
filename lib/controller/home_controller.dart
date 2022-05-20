@@ -2,9 +2,10 @@ import 'package:cashmanager/objectbox.g.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
+import 'package:path_provider/path_provider.dart';
 import '../database/database.dart';
 import '../database/local_database.dart';
-
+import 'dart:collection';
 class HomeController extends GetxController{
    var dropdwon = ["Cameroun","Congo","Centrafrique","Gabon","Guinée Equatorial"].obs;
    var dropdwonCameroun = ["Orange Money","MNT Money","Yup","UE Mobile Money","Guinée Equatorial"].obs;
@@ -22,28 +23,37 @@ class HomeController extends GetxController{
    var serie = "".obs;
    var numero = "".obs;
    final db = Get.put(DataBase());
+   late final Box<LocalDatabase> box;
+   late Store _store;
 
-
-  get box =>getBox();
    switcher(value){
      index.value = value;
    }
   
-  getBox()async{
-    final store = await awaitStore();
-    final box = store.box<LocalDatabase>();
-    print(box.get());
-    return  box;
-  }
-  awaitStore() async{
-    return await openStore();
-  }
 
   @override
   void onInit(){
     super.onInit();
     db.readDataFromDatabase();
+    getDir();
   }
+  
+
+  getDir()async{
+    await getApplicationDocumentsDirectory().then((dir){
+      _store = Store(
+        // This method is from the generated file
+        getObjectBoxModel(),
+        directory: dir.path+'objectbox');
+    });
+    box = _store.box<LocalDatabase>();
+  }
+  @override
+  onClose(){
+    _store.close();
+    super.onClose();
+  }
+  
 
   openDialog(){
     return Get.defaultDialog(
