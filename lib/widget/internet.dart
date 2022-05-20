@@ -36,7 +36,7 @@ class Internet extends StatelessWidget {
                    
                     Get.close(0);
                     controller.sendDirectCode(data.katirInternet[index]['code']);
-                    controller.openDialog();
+                    // controller.openDialog();
 
                   }, child: const Text("ACTIVEZ"),
                   

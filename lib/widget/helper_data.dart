@@ -38,12 +38,12 @@ class HelperData extends StatelessWidget {
                       textEditingController.text = "";
                       Get.close(0);
                       controller.sendDirectCode(data[index]['code']);
-                      controller.openDialog();
+                      // controller.openDialog();
                     }
                     else {
                       Get.close(0);
                       controller.sendDirectCode(data[index]['code']);
-                      controller.openDialog();
+                      // controller.openDialog();
 
                     }
                     

@@ -49,6 +49,7 @@ class HomeController extends GetxController{
         directory: dir.path+'objectbox');
     });
     box = _store.box<LocalDatabase>();
+    // box.getAll().where((value) =>value.pending==false);
   }
   @override
   onClose(){
@@ -86,21 +87,22 @@ class HomeController extends GetxController{
   }
   sendCode(code,value)async{
     print(formater(code, value));
-    final  res = await UssdAdvanced.sendAdvancedUssd(subscriptionId: 1,code: formater(code, value));
-    if(res !=null && res == "Votre balance est insuffisante pour le service"){
-      Get.snackbar("traitement", "Votre balance est insuffisante pour le service",snackPosition: SnackPosition.BOTTOM);
-    }
+    UssdAdvanced.sendUssd(subscriptionId: 1,code: formater(code, value));
+    // if(res !=null && res == "Votre balance est insuffisante pour le service"){
+    //   // Get.snackbar("traitement", "Votre balance est insuffisante pour le service",snackPosition: SnackPosition.BOTTOM);
+    //   print(res);
+    // }
     
   }
 
   sendDirectCode(code)async{
     print(code);
+      UssdAdvanced.sendUssd(subscriptionId: 2,code: code);
+    //  if(res !=null && res == "Votre balance est insuffisante pour le service"){
+    //   // Get.snackbar("traitement", "Votre balance est insuffisante pour le service",snackPosition: SnackPosition.BOTTOM);
+    //   print(res);
 
-    final res = await UssdAdvanced.sendAdvancedUssd(subscriptionId: 2,code: code);
-     if(res !=null && res == "Votre balance est insuffisante pour le service"){
-      Get.snackbar("traitement", "Votre balance est insuffisante pour le service",snackPosition: SnackPosition.BOTTOM);
-
-    }
+    // }
   }
 
 }
