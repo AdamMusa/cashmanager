@@ -55,6 +55,7 @@ class HomeController extends GetxController{
     _store.close();
     super.onClose();
   }
+  
 
   openDialog(){
     return Get.defaultDialog(
@@ -62,9 +63,9 @@ class HomeController extends GetxController{
       content: Column(
         children: [
           Lottie.asset("assets/lottie/moov_success.json",height: 140),
-          Padding(
-            padding: const EdgeInsets.only(left: 10,right:10),
-            child: Text(msg.value.toString(),textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold),),
+          const Padding(
+            padding: EdgeInsets.only(left: 10,right:10),
+            child: Text("Votre demande est en cours de traitement",textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold),),
           )
           ]
       )
@@ -84,25 +85,21 @@ class HomeController extends GetxController{
     return newValue.replaceAll(RegExp(r'\(.*\)'), value);
   }
   sendCode(code,value)async{
-    // print(formater(code, value));
+    print(formater(code, value));
     final  res = await UssdAdvanced.sendAdvancedUssd(subscriptionId: 1,code: formater(code, value));
-    if(res !=null && res != "Votre balance est insuffisante pour le service"){
-      msg.value = res;
+    if(res !=null && res == "Votre balance est insuffisante pour le service"){
+      Get.snackbar("traitement", "Votre balance est insuffisante pour le service",snackPosition: SnackPosition.BOTTOM);
     }
-    else{
-       msg.value = "Votre balance est insuffisante pour le service";
-    }
+    
   }
 
   sendDirectCode(code)async{
-    // print(code);
+    print(code);
 
     final res = await UssdAdvanced.sendAdvancedUssd(subscriptionId: 2,code: code);
-     if(res !=null && res != "Votre balance est insuffisante pour le service"){
-      msg.value = res;
-    }
-    else{
-       msg.value = "Votre balance est insuffisante pour le service";
+     if(res !=null && res == "Votre balance est insuffisante pour le service"){
+      Get.snackbar("traitement", "Votre balance est insuffisante pour le service",snackPosition: SnackPosition.BOTTOM);
+
     }
   }
 
