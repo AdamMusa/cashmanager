@@ -37,7 +37,7 @@ class ActiverParMoney extends StatelessWidget {
                       // print(textEditingController.text);
                       textEditingController.text = "";
                       Get.close(0);
-                      controller.sendCode(data[index]['code'],"95838351");
+                      controller.sendCode(data[index]['code'],controller.numero.value);
                       // controller.openDialog();
                     }
                     else {
@@ -104,7 +104,7 @@ class ActiverParMoney extends StatelessWidget {
                             onSaved: (value){
                               if(value!.length==8){
                                 // print(value);
-                                value = "";
+                                controller.numero.value = value;
                                 
                               }
                             },

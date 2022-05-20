@@ -139,7 +139,7 @@
                 "sms": "",
                 "data": "",
                 "validity": "1jr",
-                "code": "*111*2*6*7*6*(1 ou 2)*num*montant*pin#"
+                "code": "*111*2*6*7*6*(1 ou 2)*num*montant#"
             }
         ],
         "Katir MIX": [
@@ -530,7 +530,7 @@
                     "sms": "5SMS",
                     "data": "",
                     "validity": "1jr",
-                    "code": "*800*5*1*1*(1 ou 2)*code#"
+                    "code": "*800*5*1*1*(1 ou 2)#"
                 },
                 {
                     "price": "500F",
@@ -538,7 +538,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "1jr",
-                    "code": "*800*5*1*2*(1 ou 2)*code#"
+                    "code": "*800*5*1*2*(1 ou 2)#"
                 },
                 {
                     "price": "1000",
@@ -546,7 +546,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "2jrs",
-                    "code": "*800*5*1*3*(1 ou 2)*code#"
+                    "code": "*800*5*1*3*(1 ou 2)#"
                 },
                 {
                     "price": "2000",
@@ -554,7 +554,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "7jrs",
-                    "code": "*800*5*1*4*(1 ou 2)*code#"
+                    "code": "*800*5*1*4*(1 ou 2)#"
                 },
                 {
                     "price": "3000",
@@ -562,7 +562,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "30jrs",
-                    "code": "*800*5*1*5*(1 ou 2)*code#"
+                    "code": "*800*5*1*5*(1 ou 2)#"
                 },
                 {
                     "price": "5000",
@@ -570,7 +570,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "14jrs",
-                    "code": "*800*5*1*6*(1 ou 2)*code#"
+                    "code": "*800*5*1*6*(1 ou 2)#"
                 },
                 {
                     "price": "12000",
@@ -578,7 +578,7 @@
                     "sms": "3000SMS",
                     "data": "5GB",
                     "validity": "30jrs",
-                    "code": "*800*5*1*7*(1 ou 2)*code#"
+                    "code": "*800*5*1*7*(1 ou 2)#"
                 },
                 {
                     "price": "6000",
@@ -586,7 +586,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "30jrs",
-                    "code": "*800*5*1*8*(1 ou 2)*code#"
+                    "code": "*800*5*1*8*(1 ou 2)#"
                 },
                 {
                     "price": "20000",
@@ -594,7 +594,7 @@
                     "sms": "3000SMS",
                     "data": "20GB",
                     "validity": "30jrs",
-                    "code": "*800*5*1*9*(1 ou 2)*code#"
+                    "code": "*800*5*1*9*(1 ou 2)#"
                 }
             ],
             "Kattir International": [
@@ -604,7 +604,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "1jr",
-                    "code": "*800*5*2*1*(1 ou 2)*code#"
+                    "code": "*800*5*2*1*(1 ou 2)#"
                 },
                 {
                     "price": "1200F",
@@ -612,7 +612,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "3jrs",
-                    "code": "*800*5*2*2*(1 ou 2)*code#"
+                    "code": "*800*5*2*2*(1 ou 2)#"
                 },
                 {
                     "price": "2000F",
@@ -620,7 +620,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "7jrs",
-                    "code": "*800*5*2*3*(1 ou 2)*code#"
+                    "code": "*800*5*2*3*(1 ou 2)#"
                 },
                 {
                     "price": "10000F",
@@ -628,7 +628,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "30jrs",
-                    "code": "*800*5*2*4*(1 ou 2)*code#"
+                    "code": "*800*5*2*4*(1 ou 2)#"
                 }
             ],
             "Kattir Internet": [
@@ -638,7 +638,7 @@
                     "sms": "",
                     "data": "100MB",
                     "validity": "1jrs",
-                    "code": "*111*8*3*1*(1 ou 2)*pin#"
+                    "code": "*111*8*3*1*(1 ou 2)#"
                 },
                 {
                     "price": "350F",
@@ -646,7 +646,7 @@
                     "sms": "",
                     "data": "300MB",
                     "validity": "1jrs",
-                    "code": "*111*8*3*2*(1 ou 2)*pin#"
+                    "code": "*111*8*3*2*(1 ou 2)#"
                 },
                 {
                     "price": "550F",
@@ -654,7 +654,7 @@
                     "sms": "",
                     "data": "1GB",
                     "validity": "1jrs",
-                    "code": "*111*8*3*3*(1 ou 2)*pin#"
+                    "code": "*111*8*3*3*(1 ou 2)#"
                 },
                 {
                     "price": "1000F",
@@ -662,7 +662,7 @@
                     "sms": "",
                     "data": "2GB",
                     "validity": "48H",
-                    "code": "*111*8*3*4*(1 ou 2)*pin#"
+                    "code": "*111*8*3*4*(1 ou 2)#"
                 },
                 {
                     "price": "1250F",
@@ -670,7 +670,7 @@
                     "sms": "",
                     "data": "1GB",
                     "validity": "7jr",
-                    "code": "*111*8*3*5*(1 ou 2)*pin#"
+                    "code": "*111*8*3*5*(1 ou 2)#"
                 },
                 {
                     "price": "2500F",
@@ -678,7 +678,7 @@
                     "sms": "",
                     "data": "6GB",
                     "validity": "7jr",
-                    "code": "*111*8*3*6*(1 ou 2)*pin#"
+                    "code": "*111*8*3*6*(1 ou 2)#"
                 },
                 {
                     "price": "3500F",
@@ -686,7 +686,7 @@
                     "sms": "",
                     "data": "12GB",
                     "validity": "7jr",
-                    "code": "*111*8*3*7*(1 ou 2)*pin#"
+                    "code": "*111*8*3*7*(1 ou 2)#"
                 },
                 {
                     "price": "2000F",
@@ -694,7 +694,7 @@
                     "sms": "",
                     "data": "1GB",
                     "validity": "30jr",
-                    "code": "*111*8*3*8*(1 ou 2)*pin#"
+                    "code": "*111*8*3*8*(1 ou 2)#"
                 },
                 {
                     "price": "3000F",
@@ -702,7 +702,7 @@
                     "sms": "",
                     "data": "3GB",
                     "validity": "30jr",
-                    "code": "*111*8*3*9*(1 ou 2)*pin#"
+                    "code": "*111*8*3*9*(1 ou 2)#"
                 },
                 {
                     "price": "5000F",
@@ -710,7 +710,7 @@
                     "sms": "",
                     "data": "3GB",
                     "validity": "30jr",
-                    "code": "*111*8*3*10*(1 ou 2)*pin#"
+                    "code": "*111*8*3*10*(1 ou 2)#"
                 },
                 {
                     "price": "7000F",
@@ -718,7 +718,7 @@
                     "sms": "",
                     "data": "15GB",
                     "validity": "7jr",
-                    "code": "*111*8*3*11*(1 ou 2)*pin#"
+                    "code": "*111*8*3*11*(1 ou 2)#"
                 },
                 {
                     "price": "11500F",
@@ -726,7 +726,7 @@
                     "sms": "",
                     "data": "30GB",
                     "validity": "30jrs",
-                    "code": "*111*8*3*12*(1 ou 2)*pin#"
+                    "code": "*111*8*3*12*(1 ou 2)#"
                 },
                 {
                     "price": "21000F",
@@ -734,7 +734,7 @@
                     "sms": "",
                     "data": "60GB",
                     "validity": "30jr",
-                    "code": "*111*8*3*13*(1 ou 2)*pin#"
+                    "code": "*111*8*3*13*(1 ou 2)#"
                 },
                 {
                     "price": "31500F",
@@ -742,7 +742,7 @@
                     "sms": "",
                     "data": "12.5GB",
                     "validity": "30jrs",
-                    "code": "*111*8*3*14*(1 ou 2)*pin#"
+                    "code": "*111*8*3*14*(1 ou 2)#"
                 },
                 {
                     "price": "100F",
@@ -750,7 +750,7 @@
                     "sms": "",
                     "data": "200MB",
                     "validity": "Nuit",
-                    "code": "*111*8*3*15*(1 ou 2)*pin#"
+                    "code": "*111*8*3*15*(1 ou 2)#"
                 },
                 {
                     "price": "250F",
@@ -758,7 +758,7 @@
                     "sms": "",
                     "data": "500MB",
                     "validity": "Nuit",
-                    "code": "*111*8*3*16*(1 ou 2)*pin#"
+                    "code": "*111*8*3*16*(1 ou 2)#"
                 },
                 {
                     "price": "600F",
@@ -766,7 +766,7 @@
                     "sms": "",
                     "data": "3GB",
                     "validity": "Nuit",
-                    "code": "*111*8*3*17*(1 ou 2)*pin#"
+                    "code": "*111*8*3*17*(1 ou 2)#"
                 },
                 {
                     "price": "750F",
@@ -774,7 +774,7 @@
                     "sms": "",
                     "data": "1.5GB",
                     "validity": "24H",
-                    "code": "*111*8*3*18*(1 ou 2)*pin#"
+                    "code": "*111*8*3*18*(1 ou 2)#"
                 },
                 {
                     "price": "1500F",
@@ -782,7 +782,7 @@
                     "sms": "",
                     "data": "1.5GB",
                     "validity": "7jrs",
-                    "code": "*111*8*3*19*(1 ou 2)*pin#"
+                    "code": "*111*8*3*19*(1 ou 2)#"
                 }
             ],
             "Kattir SMS": [
@@ -792,7 +792,7 @@
                     "sms": "10SMS",
                     "data": "",
                     "validity": "1jr",
-                    "code": "*111*8*4*1*(1 ou 2)*pin#"
+                    "code": "*111*8*4*1*(1 ou 2)#"
                 },
                 {
                     "price": "50F",
@@ -800,7 +800,7 @@
                     "sms": "50SMS",
                     "data": "",
                     "validity": "1jr",
-                    "code": "*111*8*4*2*(1 ou 2)*pin#"
+                    "code": "*111*8*4*2*(1 ou 2)#"
                 },
                 {
                     "price": "100F",
@@ -808,7 +808,7 @@
                     "sms": "120SMS",
                     "data": "",
                     "validity": "1jr",
-                    "code": "*111*8*4*3*(1 ou 2)*pin#"
+                    "code": "*111*8*4*3*(1 ou 2)#"
                 },
                 {
                     "price": "250F",
@@ -816,7 +816,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "1jr",
-                    "code": "*111*8*4*4*(1 ou 2)*pin#"
+                    "code": "*111*8*4*4*(1 ou 2)#"
                 },
                 {
                     "price": "500F",
@@ -824,7 +824,7 @@
                     "sms": "SMS Illimites",
                     "data": "",
                     "validity": "14jrs",
-                    "code": "*111*8*4*5*(1 ou 2)*pin#"
+                    "code": "*111*8*4*5*(1 ou 2)#"
                 },
                 {
                     "price": "1000F",
@@ -832,7 +832,7 @@
                     "sms": "SMS Illimites",
                     "data": "",
                     "validity": "30jrs",
-                    "code": "*111*8*4*6*(1 ou 2)*pin#"
+                    "code": "*111*8*4*6*(1 ou 2)#"
                 }
             ],
             "Kattir Mix": [
@@ -842,7 +842,7 @@
                     "sms": "",
                     "data": "130MB",
                     "validity": "1jr",
-                    "code": "*111*8*5*1*(1 ou 2)*pin#"
+                    "code": "*111*8*5*1*(1 ou 2)#"
                 },
                 {
                     "price": "1000F",
@@ -850,7 +850,7 @@
                     "sms": "",
                     "data": "1GB",
                     "validity": "2jrs",
-                    "code": "*111*8*5*2*(1 ou 2)*pin#"
+                    "code": "*111*8*5*2*(1 ou 2)#"
                 },
                 {
                     "price": "3000F",
@@ -858,7 +858,7 @@
                     "sms": "",
                     "data": "1GB",
                     "validity": "7jrs",
-                    "code": "*111*8*5*3*(1 ou 2)*pin#"
+                    "code": "*111*8*5*3*(1 ou 2)#"
                 },
                 {
                     "price": "5000F",
@@ -866,7 +866,7 @@
                     "sms": "",
                     "data": "2GB",
                     "validity": "14jrs",
-                    "code": "*111*8*5*4*(1 ou 2)*pin#"
+                    "code": "*111*8*5*4*(1 ou 2)#"
                 },
                 {
                     "price": "10000F",
@@ -874,7 +874,7 @@
                     "sms": "",
                     "data": "4GB",
                     "validity": "30jrs",
-                    "code": "*111*8*5*5*(1 ou 2)*pin#"
+                    "code": "*111*8*5*5*(1 ou 2)#"
                 }
             ],
             "Ziada": [
@@ -884,7 +884,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "1jr",
-                    "code": "*111*8*6*1*(1 ou 2)*pin#"
+                    "code": "*111*8*6*1*(1 ou 2)#"
                 },
                 {
                     "price": "1000F",
@@ -892,7 +892,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "2jrs",
-                    "code": "*111*8*6*2*(1 ou 2)*pin#"
+                    "code": "*111*8*6*2*(1 ou 2)#"
                 },
                 {
                     "price": "2000F",
@@ -900,7 +900,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "7jrs",
-                    "code": "*111*8*6*3*(1 ou 2)*pin#"
+                    "code": "*111*8*6*3*(1 ou 2)#"
                 },
                 {
                     "price": "3000F",
@@ -908,7 +908,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "15jrs",
-                    "code": "*111*8*6*4*(1 ou 2)*pin#"
+                    "code": "*111*8*6*4*(1 ou 2)#"
                 },
                 {
                     "price": "5000F",
@@ -916,7 +916,7 @@
                     "sms": "",
                     "data": "",
                     "validity": "30jrs",
-                    "code": "*111*8*6*5*(1 ou 2)*pin#"
+                    "code": "*111*8*6*5*(1 ou 2)#"
                 }
             ],
             "Mon Compte": {
@@ -930,17 +930,17 @@
                     "code": "*111*1*3#"
                 },
                 "Mon solde moov money": {
-                    "code": "*111*1*5*code#"
+                    "code": "*111*1*5#"
                 }
             },
             "Envoi argent": {
-                "code": "*800*1*num_benificiaire*montant*code#"
+                "code": "*800*1*num_benificiaire*montant#"
             },
             "Achat credit": {
-                "code": "*800*2*(1 ou 2)*montant*code#"
+                "code": "*800*2*(1 ou 2)*montant#"
             },
             "Retrait argent": {
-                "code": "*800*3*num_agent*montant*code#"
+                "code": "*800*3*num_agent*montant#"
             },
             "Paiement": {
                 "SNE": {
@@ -948,7 +948,7 @@
                         "code": "*800*6*1*1*num_capteurSNE*montant#"
                     },
                     "Rapport": {
-                        "code": "*800*6*1*2*num_capteurSNE*code#"
+                        "code": "*800*6*1*2*num_capteurSNE#"
                     }
                 },
                 "Canal+": {
@@ -956,10 +956,10 @@
                         "code": "*800*6*2*1*num_carte*montant#"
                     },
                     "Changement de formule": {
-                        "code": "*800*6*2*2*num_capteurSNE*code#"
+                        "code": "*800*6*2*2*num_capteurSNE#"
                     },
                     "Memoriser votre carte": {
-                        "code": "*800*6*2*3*num_carte*montant*code#"
+                        "code": "*800*6*2*3*num_carte*montant#"
                     },
                     "Regularisation impayes": {
                         "code": "*800*6*2*4#"
@@ -970,7 +970,7 @@
                 },
                 "Bien et Service": [
                     {
-                        "code": "*800*6*3*num_marchand*montant*reference*code#"
+                        "code": "*800*6*3*num_marchand*montant*reference#"
                     }
                 ]
             },
@@ -984,68 +984,68 @@
                             "Tranfert Local": {
                                 "Airtel Money": [
                                     {
-                                        "code": "*800*9*1*1*1*num_airtemoney*montant*code#"
+                                        "code": "*800*9*1*1*1*num_airtemoney*montant#"
                                     }
                                 ]
                             },
                             "Transfert CEMAC": {
                                 "Cameroun": {
                                     "BICEC(BIPAY)": {
-                                        "code": "*800*9*1*2*1*1*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*1*1*num_compte_destinataire*montant#"
                                     },
                                     "CBC(Speeddoh)": {
-                                        "code": "*800*9*1*2*1*2*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*1*2*num_compte_destinataire*montant#"
                                     },
                                     "CCA Bank (Moving)": {
-                                        "code": "*800*9*1*2*1*3*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*1*3*num_compte_destinataire*montant#"
                                     },
                                     "Express Union Mobile": {
-                                        "code": "*800*9*1*2*1*4*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*1*4*num_compte_destinataire*montant#"
                                     },
                                     "La Regional(Ananas Money)": {
-                                        "code": "*800*9*1*2*1*5*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*1*5*num_compte_destinataire*montant#"
                                     },
                                     "MTN Mobile Money": {
-                                        "code": "*800*9*1*2*1*6*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*1*6*num_compte_destinataire*montant#"
                                     },
                                     "Orange Money": {
-                                        "code": "*800*9*1*2*1*7*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*1*7*num_compte_destinataire*montant#"
                                     },
                                     "YUB(SG)": {
-                                        "code": "*800*9*1*2*1*8*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*1*8*num_compte_destinataire*montant#"
                                     },
                                     "UBC": {
-                                        "code": "*800*9*1*2*1*9*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*1*9*num_compte_destinataire*montant#"
                                     }
                                 },
                                 "Congo": {
                                     "Airtel Congo": {
-                                        "code": "*800*9*1*2*2*1*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*2*1*num_compte_destinataire*montant#"
                                     },
                                     "MTN MoMo": {
-                                        "code": "*800*9*1*2*2*2*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*2*2*num_compte_destinataire*montant#"
                                     },
                                     "BCI Congo": {
-                                        "code": "*800*9*1*2*2*3*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*2*3*num_compte_destinataire*montant#"
                                     },
                                     "BGFIBANK Congo": {
-                                        "code": "*800*9*1*2*2*4*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*2*4*num_compte_destinataire*montant#"
                                     }
                                 },
                                 "Centrafrique": {
                                     "Orange Money": {
-                                        "code": "*800*9*1*2*4*1*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*4*1*num_compte_destinataire*montant#"
                                     }
                                 },
                                 "Gabon": {
                                     "Moov Africa": {
-                                        "code": "*800*9*1*2*5*1*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*5*1*num_compte_destinataire*montant#"
                                     },
                                     "Airtel Money": {
-                                        "code": "*800*9*1*2*5*2*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*5*2*num_compte_destinataire*montant#"
                                     },
                                     "BGFIBank": {
-                                        "code": "*800*9*1*2*5*3*num_compte_destinataire*montant*code#"
+                                        "code": "*800*9*1*2*5*3*num_compte_destinataire*montant#"
                                     }
                                 }
                             }
@@ -1053,76 +1053,76 @@
                         "Paiement": {
                             "Paiement Local": {
                                 "Airtel Money": {
-                                    "code": "*800*9*2*1*1*num_marchand_airtelmoney*montant*code#"
+                                    "code": "*800*9*2*1*1*num_marchand_airtelmoney*montant#"
                                 }
                             },
                             "Paiement CEMAC": {
                                 "Cameroun": {
                                     "BICEC(BYPAY)": {
-                                        "code": "*800*9*2*2*1*1*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*1*1*num_marchand_airtelmoney*montant#"
                                     },
                                     "CBC(Speedoh)": {
-                                        "code": "*800*9*2*2*1*2*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*1*2*num_marchand_airtelmoney*montant#"
                                     },
                                     "CCA Bank(Moving)": {
-                                        "code": "*800*9*2*2*1*3*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*1*3*num_marchand_airtelmoney*montant#"
                                     },
                                     "Express Union Mobile": {
-                                        "code": "*800*9*2*2*1*4*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*1*4*num_marchand_airtelmoney*montant#"
                                     },
                                     "La Regionale (Ananas Money)": {
-                                        "code": "*800*9*2*2*1*5*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*1*5*num_marchand_airtelmoney*montant#"
                                     },
                                     "MTN Mobile Money": {
-                                        "code": "*800*9*2*2*1*6*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*1*6*num_marchand_airtelmoney*montant#"
                                     },
                                     "Orange Money": {
-                                        "code": "*800*9*2*2*1*7*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*1*7*num_marchand_airtelmoney*montant#"
                                     },
                                     "YUP(SG)": {
-                                        "code": "*800*9*2*2*1*8*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*1*8*num_marchand_airtelmoney*montant#"
                                     },
                                     "UBC": {
-                                        "code": "*800*9*2*2*1*9*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*1*9*num_marchand_airtelmoney*montant#"
                                     }
                                 },
                                 "Congo": {
                                     "Airtel Congo": {
-                                        "code": "*800*9*2*2*2*1*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*2*1*num_marchand_airtelmoney*montant#"
                                     },
                                     "MTN MoMo": {
-                                        "code": "*800*9*2*2*2*2*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*2*2*num_marchand_airtelmoney*montant#"
                                     },
                                     "BCi Congo": {
-                                        "code": "*800*9*2*2*2*3*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*2*3*num_marchand_airtelmoney*montant#"
                                     },
                                     "BGFI Congo": {
-                                        "code": "*800*9*2*2*2*1*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*2*1*num_marchand_airtelmoney*montant#"
                                     }
                                 },
                                 "Centrafrique": {
                                     "Orange Money": {
-                                        "code": "*800*9*2*2*4*1*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*4*1*num_marchand_airtelmoney*montant#"
                                     }
                                 },
                                 "Gabon": {
                                     "Moov Africa": {
-                                        "code": "*800*9*2*2*5*1*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*5*1*num_marchand_airtelmoney*montant#"
                                     },
                                     "Airtel Money": {
-                                        "code": "*800*9*2*2*5*2*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*5*2*num_marchand_airtelmoney*montant#"
                                     },
                                     "BGFIBank": {
-                                        "code": "*800*9*2*2*5*3*num_marchand_airtelmoney*montant*code#"
+                                        "code": "*800*9*2*2*5*3*num_marchand_airtelmoney*montant#"
                                     }
                                 }
                             },
                             "Retrait GAB": {
                                 "Retrait Pour Soi": {
-                                    "code": "*800*9*3*1*montant*code#"
+                                    "code": "*800*9*3*1*montant#"
                                 },
                                 "Retrait pour les autres": {
-                                    "code": "*800*9*3*2*montant*code#"
+                                    "code": "*800*9*3*2*montant#"
                                 }
                             }
                         }

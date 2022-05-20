@@ -75,10 +75,10 @@ class HomeController extends GetxController{
     
   formater(code,value){
       if(number.value ==""){
-       return formaterHelper(code, value);
+       return formaterHelper(code, '1');
       }
       var newValue = formaterHelper(code, value);
-      return newValue.replaceAll(RegExp('num'), number.value);
+      return newValue.replaceAll(RegExp('#'), "*${number.value}*1#");
   }
 
   formaterHelper(code,value){
@@ -86,8 +86,9 @@ class HomeController extends GetxController{
     return newValue.replaceAll(RegExp(r'\(.*\)'), value);
   }
   sendCode(code,value)async{
-    print(formater(code, value));
-    UssdAdvanced.sendUssd(subscriptionId: 1,code: formater(code, value));
+    code = formater(code, value);
+    print(code);
+    UssdAdvanced.sendUssd(subscriptionId: 1,code: code.toString());
     // if(res !=null && res == "Votre balance est insuffisante pour le service"){
     //   // Get.snackbar("traitement", "Votre balance est insuffisante pour le service",snackPosition: SnackPosition.BOTTOM);
     //   print(res);

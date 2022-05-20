@@ -1,4 +1,5 @@
 import 'package:cashmanager/database/database.dart';
+import 'package:cashmanager/widget/activer_par_money.dart';
 import 'package:cashmanager/widget/appel.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -38,7 +39,7 @@ class ChoiceOptionSMS extends StatelessWidget {
               Lottie.asset("assets/lottie/moov_msg.json",height: 250),
               const SizedBox(height: 15),
              itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Katir SMS", data: db.katirSMS.value)),text: "Katir SMS"),
-             itemOption(context,onTap: ()=>Get.to(()=>Appels(title: "Katir SMS ", data: db.katirSMSParMoovMoney.value)),text: "Katir SMS par Moov Monney"),
+             itemOption(context,onTap: ()=>Get.to(()=>ActiverParMoney(title: "Katir SMS ", data: db.katirSMSParMoovMoney.value)),text: "Katir SMS par Moov Monney"),
             ],
           ),
         ),
