@@ -22,10 +22,10 @@ class Transaction extends GetView<TransactionController>{
           child: Card(
             elevation: 4,
             child: ListTile(
-              
-              leading:const Text("Status"),
               trailing: controller.listRecordePending[index].pending?IconButton(
-                onPressed: (){},
+                onPressed: (){
+                  
+                },
                 icon: const Icon(Icons.pending),
                
               ):IconButton(
@@ -35,9 +35,12 @@ class Transaction extends GetView<TransactionController>{
               ),
               subtitle: Column(
                 children: [
-                  // Text(controller.listRecordePending[index].pending.toString())
+                  Text(controller.listRecordePending[index].titre),
+                  Text(controller.listRecordePending[index].description),
+                  Text(controller.listRecordePending[index].min+" "+controller.listRecordePending[index].price+" "+controller.listRecordePending[index].sms)
                 ],
               ),
+              leading: Text(controller.listRecordePending[index].validity),
               
             ),
           )
