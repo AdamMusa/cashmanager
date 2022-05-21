@@ -6,27 +6,52 @@ import 'package:get/get.dart';
 class Transaction extends GetView<TransactionController>{
   // ignore: prefer_const_constructors_in_immutables
   Transaction({ Key? key }) : super(key: key);
-  final transction = Get.put(TransactionController());
+  final transaction = Get.put(TransactionController());
   @override
   Widget build(BuildContext context) {
-    print(transction.listRecordePending);
+    print(controller.listRecordePending);
     // print(controller.box.getAll().where((element) => element.pending==false));
-    return transction.listRecordePending.isEmpty?const Text("no data yet"): ListView.builder(
-        itemCount: transction.listRecordePending.length,
-        itemBuilder: (context, index) => Container(
-        height: 100,
-        width: MediaQuery.of(context).size.width,
-        padding: const EdgeInsets.only(left: 10,right: 10,top: 10),
-      
-        child: Card(
-          elevation: 4,
-          child: Column(
-            children: [
-              Text(transction.listRecordePending[index].validity.toString())
-            ],
-          ),
+    return GetBuilder<TransactionController>(
+      builder: (controller)=> controller.listRecordePending.isEmpty?const Text("no data yet"): ListView.builder(
+          itemCount: controller.listRecordePending.length,
+          itemBuilder: (context, index) => Container(
+          height: 100,
+          width: MediaQuery.of(context).size.width,
+          padding: const EdgeInsets.only(left: 10,right: 10,top: 10),
+        
+          child: Card(
+            elevation: 4,
+            child: ListTile(
+              
+              leading:const Text("Status"),
+              trailing: controller.listRecordePending[index].pending?IconButton(
+                onPressed: (){},
+                icon: const Icon(Icons.pending),
+               
+              ):IconButton(
+                onPressed: (){},
+                icon: const Icon(Icons.done),
+                
+              ),
+              subtitle: Column(
+                children: [
+                  // Text(controller.listRecordePending[index].pending.toString())
+                ],
+              ),
+              
+            ),
+          )
+          
+          // Card(
+          //   elevation: 4,
+          //   child: Column(
+          //     children: [
+          //       Text(controller.listRecordePending[index].validity.toString())
+          //     ],
+          //   ),
+          // )
         )
-      )
+      ),
     );
    
   }

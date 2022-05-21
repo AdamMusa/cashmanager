@@ -8,6 +8,6 @@ var listRecodeDone = [].obs;
 @override
   void onInit() {
     super.onInit();
-    listRecodeDone.value = _controller.box.getAll().where((element) => element.pending==true).toList();
+    listRecodeDone.value = _controller.box.getAll().where((element) => element.pending==false).toList();
   }
 }

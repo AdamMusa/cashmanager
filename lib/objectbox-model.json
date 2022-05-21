@@ -5,8 +5,9 @@
   "entities": [
     {
       "id": "1:4057597731057637810",
-      "lastPropertyId": "10:1521343588136124969",
+      "lastPropertyId": "11:8080912983718568222",
       "name": "LocalDatabase",
+      "flags": 2,
       "properties": [
         {
           "id": "1:7626282829856395366",
@@ -58,6 +59,11 @@
           "id": "10:1521343588136124969",
           "name": "pending",
           "type": 1
+        },
+        {
+          "id": "11:8080912983718568222",
+          "name": "numero",
+          "type": 9
         }
       ],
       "relations": []

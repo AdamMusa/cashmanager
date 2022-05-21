@@ -9,7 +9,7 @@ final listRecordePending = [].obs;
 @override
   void onInit() {
     super.onInit();
-   listRecordePending.value = _controller.box.getAll().where((element) => element.pending==false).toList();
+    listRecordePending.value = _controller.box.getAll().where((element) => element.pending==true).toList();
   }
 }
 

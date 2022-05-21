@@ -46,7 +46,8 @@ class Appels extends StatelessWidget {
                         validity: data[index]['validity'],
                         price: data[index]['price'],
                         titre: title,
-                        pending: false,
+                        numero: "A moi",
+                        pending: true,
                         description:controller.description.value ,
                       ));
                       debugPrint("Activez");

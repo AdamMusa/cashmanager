@@ -1,7 +1,6 @@
 import 'package:objectbox/objectbox.dart';
 
 @Entity()
-@Sync()
 class LocalDatabase {
 
   int id;
@@ -13,9 +12,10 @@ class LocalDatabase {
   String code ;
   String titre ;
   String description ;
-  bool? pending = false;
+  String numero ;
+  bool? pending = true;
 
-  LocalDatabase({this.id = 0, this.price="", this.min="",this.sms="",this.data ="" , this.validity ="",this.code ="", this.titre ="", this.description ="",this.pending});
+  LocalDatabase({this.id = 0, this.price="", this.min="",this.sms="",this.data ="" , this.validity ="",this.code ="", this.titre ="", this.description ="",this.pending,this.numero=""});
 
   
 }
