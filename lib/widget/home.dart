@@ -16,7 +16,7 @@ Widget switchScreen(value){
     case 0:
       return const Index();
     case 1:
-      return const Transaction();
+      return Transaction();
     default:
     return const Historic();
   }
