@@ -21,38 +21,34 @@ class Transaction extends GetView<TransactionController>{
         
           child: Card(
             elevation: 4,
-            child: ListTile(
-              trailing: controller.listRecordePending[index].pending?IconButton(
-                onPressed: (){
-                  
-                },
-                icon: const Icon(Icons.pending),
-               
-              ):IconButton(
-                onPressed: (){},
-                icon: const Icon(Icons.done),
-                
-              ),
-              subtitle: Column(
-                children: [
-                  Text(controller.listRecordePending[index].titre),
-                  Text(controller.listRecordePending[index].description),
-                  Text(controller.listRecordePending[index].min+" "+controller.listRecordePending[index].price+" "+controller.listRecordePending[index].sms)
-                ],
-              ),
-              leading: Text(controller.listRecordePending[index].validity),
-              
-            ),
+            child: Column(
+              children: [
+                Container(
+                  alignment: Alignment.topLeft,
+                  padding: const EdgeInsets.only(left:28),
+                  child: const Text("Vous avez acheter",textAlign: TextAlign.right,)),
+                Row(
+                  children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left:15),
+                        child: controller.listRecordePending[index].pending?IconButton(
+                          onPressed: (){
+
+                          },
+                          icon: const Icon(Icons.pending),
+                        
+                        ):IconButton(
+                          onPressed: (){},
+                          icon: const Icon(Icons.done),
+                          
+                        ),
+                      ),
+                      Text(controller.listRecordePending[index].min+" "+controller.listRecordePending[index].sms+" "+controller.listRecordePending[index].data + " à " +controller.listRecordePending[index].price,textAlign: TextAlign.center,),
+                  ],
+                ),
+              ],
+            )
           )
-          
-          // Card(
-          //   elevation: 4,
-          //   child: Column(
-          //     children: [
-          //       Text(controller.listRecordePending[index].validity.toString())
-          //     ],
-          //   ),
-          // )
         )
       ),
     );
