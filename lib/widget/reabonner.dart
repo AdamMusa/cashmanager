@@ -50,7 +50,7 @@ class Reabonner extends StatelessWidget {
                       if(value!.length<11 || value.length>11){
                         return "Numero du conteur invalide";
                       }
-                      return controller.serie.value = value;
+                      controller.serie.value = value;
                     },
                   ),
                   const SizedBox(height: 15,),
@@ -74,7 +74,7 @@ class Reabonner extends StatelessWidget {
                       if(value!.length<4){
                         return "imposible de recharger avec ce montant";
                      }
-                     return controller.montant.value = value;
+                     controller.montant.value = value;
                     },
                   ),
                   const SizedBox(height: 15,),
@@ -98,7 +98,7 @@ class Reabonner extends StatelessWidget {
                       if(value!.length<4 || value.length>4){
                         return "Le mot de passe doit etre 4 chiffre";
                       }
-                      return controller.password.value = value;
+                      controller.password.value = value;
                     },
                   ),
                   const SizedBox(height: 20,),
