@@ -1,18 +1,22 @@
+import 'package:cashmanager/controller/home_controller.dart';
 import 'package:cashmanager/controller/transaction_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../database/local_database.dart';
 
 
 class Transaction extends GetView<TransactionController>{
   // ignore: prefer_const_constructors_in_immutables
   Transaction({ Key? key }) : super(key: key);
   final transaction = Get.put(TransactionController());
+  final _controller  = Get.find<HomeController>();
   @override
   Widget build(BuildContext context) {
     print(controller.listRecordePending);
     // print(controller.box.getAll().where((element) => element.pending==false));
-    return GetBuilder<TransactionController>(
-      builder: (controller)=> controller.listRecordePending.isEmpty?const Text("no data yet"): ListView.builder(
+    return Obx(
+      ()=> controller.listRecordePending.isEmpty?const Text("no data yet"): ListView.builder(
           itemCount: controller.listRecordePending.length,
           itemBuilder: (context, index) => Container(
           height: 100,
@@ -21,37 +25,23 @@ class Transaction extends GetView<TransactionController>{
         
           child: Card(
             elevation: 4,
-            child: Column(
-              children: [
-                Container(
-                  alignment: Alignment.topLeft,
-                  padding: const EdgeInsets.only(left:28),
-                  child: const Text("Vous avez acheter",textAlign: TextAlign.right,)),
-                Row(
-                  children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left:15),
-                        child: controller.listRecordePending[index].pending?IconButton(
-                          onPressed: (){
-
-                          },
-                          icon: const Icon(Icons.pending),
+            child: ListTile(
+              title: Text(controller.listRecordePending[index].titre,style: const TextStyle(color:Colors.indigo),),
+              trailing:IconButton(onPressed: (){
+                 _controller.box.put(LocalDatabase(
+                        id: controller.listRecordePending[index].id,
+                        numero: "A moi",
+                        pending: false,
                         
-                        ):IconButton(
-                          onPressed: (){},
-                          icon: const Icon(Icons.done),
-                          
-                        ),
-                      ),
-                      Text(controller.listRecordePending[index].min+" "+controller.listRecordePending[index].sms+" "+controller.listRecordePending[index].data + " à " +controller.listRecordePending[index].price,textAlign: TextAlign.center,),
-                  ],
-                ),
-              ],
+                      ));
+                // _controller.box.remove(controller.listRecordePending[index].id);
+               transaction.listRecordePending.value =  _controller.box.getAll().where((element) => element.pending==true).toList();
+              },icon: const Icon(Icons.pending_rounded,color: Colors.indigo,)),
+              subtitle: Text(controller.listRecordePending[index].min+" "+controller.listRecordePending[index].sms+" "+controller.listRecordePending[index].data+" à "+controller.listRecordePending[index].price+" valable jusqu'à "+controller.listRecordePending[index].validity,textAlign: TextAlign.left,),
             )
           )
         )
       ),
     );
-   
   }
 }
