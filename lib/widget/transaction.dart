@@ -30,8 +30,16 @@ class Transaction extends GetView<TransactionController>{
               trailing:IconButton(onPressed: (){
                  _controller.box.put(LocalDatabase(
                         id: controller.listRecordePending[index].id,
+                        min: controller.listRecordePending[index]['min'],
+                        sms: controller.listRecordePending[index]['sms'],
+                        data: controller.listRecordePending[index]['data'],
+                        code: controller.listRecordePending[index]['code'],
+                        validity: controller.listRecordePending[index]['validity'],
+                        price: controller.listRecordePending[index]['price'],
+                        titre: controller.listRecordePending[index].titre,
                         numero: "A moi",
                         pending: false,
+                        description:controller.listRecordePending[index].description,
                         
                       ));
                 // _controller.box.remove(controller.listRecordePending[index].id);

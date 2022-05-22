@@ -30,8 +30,16 @@ class Historic extends GetView<HistoricController>{
               trailing:IconButton(onPressed: (){
                 _controller.box.put(LocalDatabase(
                     id: controller.listRecodeDone[index].id,
-                    numero: "A moi",
-                    pending: true,
+                        min: controller.listRecodeDone[index]['min'],
+                        sms: controller.listRecodeDone[index]['sms'],
+                        data: controller.listRecodeDone[index]['data'],
+                        code: controller.listRecodeDone[index]['code'],
+                        validity: controller.listRecodeDone[index]['validity'],
+                        price: controller.listRecodeDone[index]['price'],
+                        titre: controller.listRecodeDone[index].titre,
+                        numero: "A moi",
+                        pending: true,
+                        description:controller.listRecodeDone[index].description,
                     
                   ));
                historic.listRecodeDone.value =  _controller.box.getAll().where((element) => element.pending==true).toList();
