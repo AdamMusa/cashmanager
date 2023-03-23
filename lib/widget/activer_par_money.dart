@@ -35,9 +35,9 @@ class ActiverParMoney extends StatelessWidget {
                   ElevatedButton(onPressed: (){
                     if(textEditingController.text.length==8 && controller.autre.value){
                       // print(textEditingController.text);
-                      textEditingController.text = "";
                       Get.close(0);
-                      controller.sendCode(data[index]['code'],controller.numero.value);
+                      controller.sendCode(data[index]['code'],textEditingController.text);
+                      textEditingController.text = "";
                       // controller.openDialog();
                     }
                     else {

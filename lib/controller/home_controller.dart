@@ -78,6 +78,7 @@ class HomeController extends GetxController{
        return formaterHelper(code, '1');
       }
       var newValue = formaterHelper(code, value);
+      print("Je suis ici -------------");
       return newValue.replaceAll(RegExp('#'), "*${number.value}*1#");
   }
 
@@ -87,14 +88,11 @@ class HomeController extends GetxController{
   }
   sendCode(code,value)async{
     code = formater(code, value);
-    numero.value = '';
     print(code);
-    UssdAdvanced.sendUssd(subscriptionId: 1,code: code.toString());
-    // if(res !=null && res == "Votre balance est insuffisante pour le service"){
-    //   // Get.snackbar("traitement", "Votre balance est insuffisante pour le service",snackPosition: SnackPosition.BOTTOM);
-    //   print(res);
-    // }
+    print(value);
     
+    numero.value = '';
+    // UssdAdvanced.sendUssd(subscriptionId: 1,code: code.toString());
   }
 
   getPendingRecode(){
@@ -105,13 +103,8 @@ class HomeController extends GetxController{
     
   }
   sendDirectCode(code)async{
-      print(code);
       UssdAdvanced.sendUssd(subscriptionId: 2,code: code);
-    //  if(res !=null && res == "Votre balance est insuffisante pour le service"){
-    //   // Get.snackbar("traitement", "Votre balance est insuffisante pour le service",snackPosition: SnackPosition.BOTTOM);
-    //   print(res);
-
-    // }
+    
   }
 
 }
